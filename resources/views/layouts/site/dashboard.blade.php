@@ -27,7 +27,7 @@
     <div id="page-wrapper" class="gray-bg">
         @include('site.includes.header')
         @yield('content')
-
+        @include('site.includes.footer')
 
     </div>
 </div>
