@@ -1,34 +1,10 @@
-<!DOCTYPE html>
-<html>
+@extends('layouts.site.dashboard')
 
-<head>
+@section('title')
+<title>INSPINIA | Calendar</title>
+@endsection
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>INSPINIA | Calendar</title>
-
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-
-    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
-    <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
-
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-<div id="wrapper">
-
-@include('site.includes.navbar')
-
-<div id="page-wrapper" class="gray-bg">
-@include('site.includes.header')
+@section('content')
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-8">
         <h2>Calendar</h2>
@@ -122,7 +98,7 @@
         </div>
     </div>
 </div>
-@includes('site.includes.footer')
+
 
 </div>
 </div>
@@ -253,6 +229,4 @@
 
 
 </script>
-</body>
-
-</html>
+@endsection
