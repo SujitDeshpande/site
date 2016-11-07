@@ -6,14 +6,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Login</title>
+    @yield('title')
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-
+    {!! Html::style('css/bootstrap.min.css') !!}
+    {!! Html::style('font-awesome/css/font-awesome.css') !!}
+    {!! Html::style('css/animate.css') !!}
+    {!! Html::style('css/style.css') !!}
 </head>
 
 <body class="gray-bg">
@@ -21,8 +19,8 @@
     @yield('content')
 
     <!-- Mainly scripts -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    {!! Html::script('js/jquery-2.1.1.js') !!}
+    {!! Html::script('js/bootstrap.min.js') !!}
 
 </body>
 
