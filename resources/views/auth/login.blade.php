@@ -9,10 +9,10 @@
         <div>
             <div>
 
-                <h1 class="logo-name">IN+</h1>
+                <h1 class="logo-name">A+</h1>
 
             </div>
-            <h3>Welcome to IN+</h3>
+            <h3>Welcome to Automation App</h3>
             <p>Automation App
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>

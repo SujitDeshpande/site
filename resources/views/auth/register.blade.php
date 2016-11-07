@@ -9,7 +9,7 @@
         <div>
             <div>
 
-                <h1 class="logo-name">IN+</h1>
+                <h1 class="logo-name">A+</h1>
 
             </div>
             <h3>Register with Automation App</h3>
