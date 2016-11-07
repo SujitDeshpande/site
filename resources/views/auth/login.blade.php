@@ -1,7 +1,7 @@
 @extends('layouts.auth.app')
 
 @section('title')
-<title>INSPINIA | Login</title>
+<title>Automation | Login</title>
 @endsection
 
 @section('content')

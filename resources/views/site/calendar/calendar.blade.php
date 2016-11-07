@@ -6,18 +6,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>INSPINIA | Calendar</title>
+    <title>Automation | Calendar</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-
-    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
-    <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
-
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    {!! Html::style('css/bootstrap.min.css') !!}
+    {!! Html::style('font-awesome/css/font-awesome.css') !!}
+    {!! Html::style('css/plugins/iCheck/custom.css') !!}
+    {!! Html::style('css/plugins/fullcalendar/fullcalendar.css') !!}
+    {!! Html::style('css/plugins/fullcalendar/fullcalendar.print.css') !!}
+    {!! Html::style('css/animate.css') !!}
+    {!! Html::style('css/style.css') !!}
 
 </head>
 
@@ -51,7 +48,7 @@
                 </div>
                 <div class="ibox-content">
                     <div id='external-events'>
-                        <p>Drag a event and drop into callendar.</p>
+                        <p>Drag a event and drop into the calendar.</p>
                         <div class='external-event navy-bg'>Go to shop and buy some products.</div>
                         <div class='external-event navy-bg'>Check the new CI from Corporation.</div>
                         <div class='external-event navy-bg'>Send documents to John.</div>

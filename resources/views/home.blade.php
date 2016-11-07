@@ -1,7 +1,7 @@
 @extends('layouts.site.dashboard')
 
 @section('title')
-<title>INSPINIA | Main view</title>
+<title>Automation | Main view</title>
 @endsection
 
 @section('content')
