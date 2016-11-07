@@ -28,7 +28,7 @@
 @include('site.includes.navbar')
 
 <div id="page-wrapper" class="gray-bg">
-@includes('site.includes.header')
+@include('site.includes.header')
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-8">
         <h2>Calendar</h2>
