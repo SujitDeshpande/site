@@ -1,6 +1,6 @@
 @extends('layouts.auth.app')
 
-@section('content')
+@section('title')
 <title>INSPINIA | Forgot password</title>
 @endsection
 <!-- Main Content -->
