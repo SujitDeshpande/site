@@ -12,7 +12,7 @@
                 <h1 class="logo-name">IN+</h1>
 
             </div>
-            <h3>Register to IN+</h3>
+            <h3>Register with Automation App</h3>
             <p>Create account to see it in action.</p>
             <form class="m-t" role="form" method="POST" action="{{ url('/register') }}">
             {{ csrf_field() }}
