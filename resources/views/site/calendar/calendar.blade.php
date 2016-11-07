@@ -34,10 +34,7 @@
         <h2>Calendar</h2>
         <ol class="breadcrumb">
             <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                Extra pages
+                <a href="/home">Home</a>
             </li>
             <li class="active">
                 <strong>Calendar</strong>
@@ -85,24 +82,21 @@
 </div>
 
 <!-- Mainly scripts -->
-<script src="js/plugins/fullcalendar/moment.min.js"></script>
-<script src="js/jquery-2.1.1.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+{!! Html::script('js/plugins/fullcalendar/moment.min.js') !!}
+{!! Html::script('js/jquery-2.1.1.js') !!}
+{!! Html::script('js/bootstrap.min.js') !!}
+{!! Html::script('js/plugins/metisMenu/jquery.metisMenu.js') !!}
+{!! Html::script('js/plugins/slimscroll/jquery.slimscroll.min.js') !!}
 
 <!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
-
+{!! Html::script('js/inspinia.js') !!}
+{!! Html::script('js/plugins/pace/pace.min.js') !!}
 <!-- jQuery UI custom -->
-<script src="js/jquery-ui.custom.min.js"></script>
-
+{!! Html::script('js/jquery-ui.custom.min.js') !!}
 <!-- iCheck -->
-<script src="js/plugins/iCheck/icheck.min.js"></script>
-
+{!! Html::script('js/plugins/iCheck/icheck.min.js') !!}
 <!-- Full Calendar -->
-<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
+{!! Html::script('js/plugins/fullcalendar/fullcalendar.min.js') !!}
 
 <script>
 
