@@ -8,13 +8,16 @@
 
     <title>Automation | Calendar</title>
 
-    {!! Html::style('css/bootstrap.min.css') !!}
-    {!! Html::style('font-awesome/css/font-awesome.css') !!}
-    {!! Html::style('css/plugins/iCheck/custom.css') !!}
-    {!! Html::style('css/plugins/fullcalendar/fullcalendar.css') !!}
-    {!! Html::style('css/plugins/fullcalendar/fullcalendar.print.css') !!}
-    {!! Html::style('css/animate.css') !!}
-    {!! Html::style('css/style.css') !!}
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
 
