@@ -24,7 +24,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="/"><i class="fa fa-home"></i> <span class="nav-label">Main view</span></a>
+                    <a href="/home"><i class="fa fa-home"></i> <span class="nav-label">Main view</span></a>
                 </li>
                 <li>
                     <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
