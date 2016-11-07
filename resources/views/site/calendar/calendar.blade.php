@@ -1,10 +1,34 @@
-@extends('layouts.site.dashboard')
+<!DOCTYPE html>
+<html>
 
-@section('title')
-<title>INSPINIA | Calendar</title>
-@endsection
+<head>
 
-@section('content')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Calendar</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+
+    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
+    <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+@include('site.includes.navbar')
+
+<div id="page-wrapper" class="gray-bg">
+@include('site.includes.header')
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-8">
         <h2>Calendar</h2>
@@ -59,15 +83,6 @@
                     </div>
                 </div>
             </div>
-            <div class="ibox float-e-margins">
-                <div class="ibox-content">
-                    <h2>FullCalendar</h2> is a jQuery plugin that provides a full-sized, drag & drop calendar like the one below. It uses AJAX to fetch events on-the-fly for each month and is
-                    easily configured to use your own feed format (an extension is provided for Google Calendar).
-                    <p>
-                        <a href="http://arshaw.com/fullcalendar/" target="_blank">FullCalendar documentation</a>
-                    </p>
-                </div>
-            </div>
         </div>
         <div class="col-lg-9">
             <div class="ibox float-e-margins">
@@ -98,27 +113,30 @@
         </div>
     </div>
 </div>
-
+@include('site.includes.footer')
 
 </div>
 </div>
 
 <!-- Mainly scripts -->
-{!! Html::script('js/plugins/fullcalendar/moment.min.js') !!}
-{!! Html::script('js/jquery-2.1.1.js') !!}
-{!! Html::script('js/bootstrap.min.js') !!}
-{!! Html::script('js/plugins/metisMenu/jquery.metisMenu.js') !!}
-{!! Html::script('js/plugins/slimscroll/jquery.slimscroll.min.js') !!}
+<script src="js/plugins/fullcalendar/moment.min.js"></script>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->
-{!! Html::script('js/inspinia.js') !!}
-{!! Html::script('js/plugins/pace/pace.min.js') !!}
+<script src="js/inspinia.js"></script>
+<script src="js/plugins/pace/pace.min.js"></script>
+
 <!-- jQuery UI custom -->
-{!! Html::script('js/jquery-ui.custom.min.js') !!}
+<script src="js/jquery-ui.custom.min.js"></script>
+
 <!-- iCheck -->
-{!! Html::script('js/plugins/iCheck/icheck.min.js') !!}
+<script src="js/plugins/iCheck/icheck.min.js"></script>
+
 <!-- Full Calendar -->
-{!! Html::script('js/plugins/fullcalendar/fullcalendar.min.js') !!}
+<script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
 
 <script>
 
@@ -226,4 +244,6 @@
 
 
 </script>
-@endsection
+</body>
+
+</html>
