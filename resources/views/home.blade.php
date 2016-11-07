@@ -10,10 +10,10 @@
                 <div class="col-lg-12">
                     <div class="text-center m-t-lg">
                         <h1>
-                            Welcome in INSPINIA Static SeedProject
+                            Welcome to Automation App
                         </h1>
                         <small>
-                            It is an application skeleton for a typical web app. You can use it to quickly bootstrap your webapp projects and dev environment for these projects.
+                            Your controls for Automation will appear here...
                         </small>
                     </div>
                 </div>
