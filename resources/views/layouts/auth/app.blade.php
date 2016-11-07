@@ -10,6 +10,7 @@
 
     {!! Html::style('css/bootstrap.min.css') !!}
     {!! Html::style('font-awesome/css/font-awesome.css') !!}
+    {!! Html::style('css/plugins/iCheck/custom.css') !!}
     {!! Html::style('css/animate.css') !!}
     {!! Html::style('css/style.css') !!}
 </head>
@@ -21,7 +22,8 @@
     <!-- Mainly scripts -->
     {!! Html::script('js/jquery-2.1.1.js') !!}
     {!! Html::script('js/bootstrap.min.js') !!}
-
+     <!-- iCheck -->
+    {!! Html::script('js/plugins/iCheck/icheck.min.js') !!}
 </body>
 
 </html>
