@@ -21,4 +21,4 @@
 <!-- Full Calendar -->
 <script src="js/plugins/fullcalendar/fullcalendar.min.js"></script>
 
-<script type="text/javascript" src="/js/custom/user/deleteUser.js"></script>
+<script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
