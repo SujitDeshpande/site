@@ -23,8 +23,6 @@ class UserAdminController extends Controller
     public function index()
     {
         
-        $users = User::getAdminUsers();
-
-        return view('site.user.user')->with('users', $users);
+        
     }
 }
