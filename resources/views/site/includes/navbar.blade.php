@@ -29,6 +29,9 @@
                 <li>
                     <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
                 </li>
+                <li>
+                    <a href="#"><i class="fa fa-users"></i> <span class="nav-label">Users</span> </a>
+                </li>                
             </ul>
 
         </div>
