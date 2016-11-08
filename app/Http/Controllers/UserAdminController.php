@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\User;
+use App\Models\UserGroup;
 
 class UserAdminController extends Controller
 {
@@ -25,6 +27,18 @@ class UserAdminController extends Controller
         
         $users = User::getAdminUsers();
 
-        return view('site.user.user')->with('users', $users);
+        return view('site.user.index')->with('users', $users);
+    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+
+        $groups = UserGroup::pluck('name', 'id');
+
+        return view('site.user.create')->with('groups', $groups);
     }
 }

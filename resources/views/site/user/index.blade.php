@@ -40,7 +40,7 @@
 	            <div class="ibox-title">
 	            	<h5>Users</h5>
 	                <div class="ibox-tools">
-	                    <a href="#" class="btn btn-primary btn"><i class="fa fa-plus"></i> Create New User</a>
+	                    <a href="/user/create" class="btn btn-primary btn"><i class="fa fa-plus"></i> Create New User</a>
 	                </div> 
 	            </div>  
 	            <div class="ibox-content">
