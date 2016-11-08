@@ -7,9 +7,7 @@ use App\User;
 
 class UserAdminController extends Controller
 {
-     /**
-     * Instantiate a new UserAdminController instance.
-     */
+
     public function __construct()
     {        
         $this->middleware('auth');
