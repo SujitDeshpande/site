@@ -7,7 +7,9 @@ use App\User;
 
 class UserAdminController extends Controller
 {
-
+     /**
+     * Instantiate a new UserAdminController instance.
+     */
     public function __construct()
     {        
         $this->middleware('auth');
@@ -23,6 +25,6 @@ class UserAdminController extends Controller
         
         $users = User::getAdminUsers();
 
-return view('site.user.user')->with('users', $users);
+        return view('site.user.user')->with('users', $users);
     }
 }
