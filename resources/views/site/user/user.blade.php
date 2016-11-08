@@ -1,11 +1,31 @@
-@extends('layouts.site.dashboard')
+<!DOCTYPE html>
+<html>
 
-@section('title')
-<title>Automation | Users</title>
-<link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
-@endsection
+<head>
 
-@section('content')
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Automation | Users</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/plugins/dataTables/datatables.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+@include('site.includes.navbar')
+
+<div id="page-wrapper" class="gray-bg">
+@include('site.includes.header')
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-8">
         <h2>Calendar</h2>
@@ -59,9 +79,23 @@
         </div>
     </div>
 </div>
-<script src="js/plugins/jeditable/jquery.jeditable.js"></script>
+@include('site.includes.footer')
+</div>
+</div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/plugins/jeditable/jquery.jeditable.js"></script>
 
-<script src="js/plugins/dataTables/datatables.min.js"></script>
+    <script src="js/plugins/dataTables/datatables.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function(){
             $('.dataTables-example').DataTable({
@@ -119,4 +153,7 @@
 
         }
     </script>
-@endsection
+
+</body>
+
+</html>
