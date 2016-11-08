@@ -30,7 +30,7 @@
 	            </div>  
 	            <div class="ibox-content">
 	            	<div class="table-responsive">
-						<table class="table table-hover issue-tracker">
+						<table class="table table-striped table-bordered table-hover dataTables-example">
 							<tr>
 								<td>Id</td>
 								<td>Name</td>
