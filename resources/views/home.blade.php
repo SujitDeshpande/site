@@ -1,11 +1,26 @@
-@extends('layouts.site.dashboard')
+<!DOCTYPE html>
+<html>
 
-@section('title')
-<title>Automation | Main view</title>
-@endsection
+<head>
 
-@section('content')
-        <div class="wrapper wrapper-content animated fadeInRight">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Automation | Dashboard</title>
+
+    @include('site.includes.styles')
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    @include('site.includes.navbar')
+
+    <div id="page-wrapper" class="gray-bg">
+        @include('site.includes.header')
+         <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center m-t-lg">
@@ -19,4 +34,12 @@
                 </div>
             </div>
         </div>
-@endsection
+        @include('site.includes.footer')
+
+    </div>
+</div>
+
+@include('site.includes.scripts')
+</body>
+
+</html>
