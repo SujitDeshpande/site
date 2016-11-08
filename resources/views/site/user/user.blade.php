@@ -51,7 +51,7 @@
 									<td>Id</td>
 									<td>Name</td>
 									<td>Email</td>
-									<td>Edit/Delete</td>
+									<td>Delete User</td>
 								</tr>
 							</thead>
 							<tbody>	
