@@ -78,6 +78,8 @@
 </div>
 	@include('site.includes.scripts')
 
+	<script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
+
     <!-- Page-Level Scripts -->
     <script>
         $(document).ready(function(){
