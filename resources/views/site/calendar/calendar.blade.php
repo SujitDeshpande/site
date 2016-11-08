@@ -8,16 +8,7 @@
 
     <title>Automation | Calendar</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-
-    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
-
-    <link href="css/plugins/fullcalendar/fullcalendar.css" rel="stylesheet">
-    <link href="css/plugins/fullcalendar/fullcalendar.print.css" rel='stylesheet' media='print'>
-
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    @include('site.includes.styles')
 
 </head>
 
@@ -81,22 +72,7 @@
 </div>
 </div>
 
-<!-- Mainly scripts -->
-{!! Html::script('js/plugins/fullcalendar/moment.min.js') !!}
-{!! Html::script('js/jquery-2.1.1.js') !!}
-{!! Html::script('js/bootstrap.min.js') !!}
-{!! Html::script('js/plugins/metisMenu/jquery.metisMenu.js') !!}
-{!! Html::script('js/plugins/slimscroll/jquery.slimscroll.min.js') !!}
-
-<!-- Custom and plugin javascript -->
-{!! Html::script('js/inspinia.js') !!}
-{!! Html::script('js/plugins/pace/pace.min.js') !!}
-<!-- jQuery UI custom -->
-{!! Html::script('js/jquery-ui.custom.min.js') !!}
-<!-- iCheck -->
-{!! Html::script('js/plugins/iCheck/icheck.min.js') !!}
-<!-- Full Calendar -->
-{!! Html::script('js/plugins/fullcalendar/fullcalendar.min.js') !!}
+@include('site.includes.scripts')
 
 <script>
 
