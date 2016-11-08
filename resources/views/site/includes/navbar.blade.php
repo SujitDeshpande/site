@@ -23,21 +23,21 @@
                         A+
                     </div>
                 </li>
-                @if ( Request::is('home')
+                @if ( Request::is('home'))
                 <li class="active">
                 @else
                 <li>
                 @endif
                     <a href="/home"><i class="fa fa-home"></i> <span class="nav-label">Dashboard</span></a>
                 </li>
-                @if ( Request::is('calendar')
+                @if ( Request::is('calendar'))
                 <li class="active">
                 @else
                 <li>
                 @endif
                     <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
                 </li>
-                @if ( Request::is('user')
+                @if ( Request::is('user'))
                 <li class="active">
                 @else
                 <li>
