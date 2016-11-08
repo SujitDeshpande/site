@@ -82,6 +82,11 @@
 
     <!-- Page-Level Scripts -->
     <script>
+        $.ajaxSetup({
+	        headers: {
+	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	        }
+		});    
         $(document).ready(function(){
             $('.dataTables-example').DataTable({
                 dom: '<"html5buttons"B>lTfgitp',
@@ -114,12 +119,6 @@
 
 
         });
-
-        $.ajaxSetup({
-	        headers: {
-	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-	        }
-		});
 
         function fnClickAddRow() {
             $('#editable').dataTable().fnAddData( [
