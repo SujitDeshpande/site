@@ -25,6 +25,6 @@ class UserAdminController extends Controller
         
         $users = User::getAdminUsers();
 
-        return view('site.user')->with('users', $users);
+        return view('site.user.user')->with('users', $users);
     }
 }
