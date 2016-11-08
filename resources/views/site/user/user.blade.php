@@ -113,6 +113,12 @@
 
         });
 
+        $.ajaxSetup({
+	        headers: {
+	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+	        }
+		});
+
         function fnClickAddRow() {
             $('#editable').dataTable().fnAddData( [
                 "Custom row",
