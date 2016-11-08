@@ -82,7 +82,9 @@
     <script>
         $(document).ready(function(){
             $('.dataTables-example').DataTable({
-                dom: '<"html5buttons"B>lTfgitp'
+                dom: '<"html5buttons"B>lTfgitp',
+
+
             });
 
             /* Init DataTables */
