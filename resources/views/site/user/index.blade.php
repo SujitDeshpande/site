@@ -9,6 +9,7 @@
     <title>Automation | Users</title>
 
     @include('site.includes.styles')
+    <meta name="csrf-token" content="{!! csrf_token() !!}"/>
 
 </head>
 
@@ -22,7 +23,7 @@
 @include('site.includes.header')
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-8">
-        <h2>Calendar</h2>
+        <h2>Automation</h2>
         <ol class="breadcrumb">
             <li>
                 <a href="/home">Home</a>
@@ -40,7 +41,7 @@
 	            <div class="ibox-title">
 	            	<h5>Users</h5>
 	                <div class="ibox-tools">
-	                    <a href="/user/create" class="btn btn-primary btn"><i class="fa fa-plus"></i> Create New User</a>
+	                    <a href="create" class="btn btn-primary btn"><i class="fa fa-plus"></i> Create New User</a>
 	                </div> 
 	            </div>  
 	            <div class="ibox-content">
@@ -51,6 +52,7 @@
 									<td>Id</td>
 									<td>Name</td>
 									<td>Email</td>
+                                    <td>Role</td>
 									<td>Delete User</td>
 								</tr>
 							</thead>
@@ -60,6 +62,7 @@
 									<td> {{$user->id}} </td>
 									<td><a href="#">{{ $user->name }}</a></td>
 									<td><a href="#">{{ $user->email }}</a></td>
+                                    <td><a href="#">{{ $user->groupname }}</a></td>
 									<td>
 										<a data-user="{{ $user->id }}" id="user{{ $user->id }}" class="delete-user btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
 									</td>
@@ -73,12 +76,12 @@
         </div>
     </div>
 </div>
+
 @include('site.includes.footer')
 </div>
 </div>
 	@include('site.includes.scripts')
 
-	<script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
 
     <!-- Page-Level Scripts -->
     <script>
@@ -130,6 +133,8 @@
 
         }
     </script>
+
+    <script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
 
 </body>
 

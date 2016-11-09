@@ -15,13 +15,18 @@ $(".delete-user").click(function(){
     	}, function () {
 	    
 		$.ajax({
-		    url: '/admin/user/'+ user_id,
+		    url: '/user/'+ user_id,
 		    type: 'DELETE',
 
 		    success: function(result) {
 		        $(selector).closest('tr').fadeOut(1000);
 		        swal("Deleted!", "This user has been deleted.", "success");
-		    }
+		    },
+	        error: function(jqXHR, exception) {
+			    //alert("Error:"+jqXHR.status+":"+ jqXHR.responseText+":"+exception);
+			    //$('#post').html(jqXHR.responseText);
+			    //console.log(jqXHR.responseText);
+			}
 
 		});
         

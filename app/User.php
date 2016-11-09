@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use App\Models\UserGroup;
 
 class User extends Authenticatable
 {
@@ -21,7 +22,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','group_id'
     ];
 
     /**
@@ -36,6 +37,24 @@ class User extends Authenticatable
     public static function getAdminUsers()
     {
         $users = User::get();
+        foreach ($users as $user) {
+            $groupname = UserGroup::where('id', $user->group_id)->value('name');
+            $user["groupname"] = $groupname;
+        }
         return $users;
+    }
+
+        public static function createAdminUser($request)
+    {
+
+        $user = User::create([
+            'name' => $request['name'],
+            'email'     => $request['email'],
+            'group_id'  => intval($request['group']),
+            'password'  => \Hash::make($request['password'])
+        ]);
+
+        return $user;
+
     }
 }

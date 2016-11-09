@@ -9,7 +9,7 @@
     <title>Automation | Create User</title>
 
     @include('site.includes.styles')
-    <link rel="stylesheet" type="text/css" href="/css/plugins/chosen/chosen.css">
+    
     <meta name="csrf-token" content="{!! csrf_token() !!}"/>
 
 </head>
@@ -24,13 +24,16 @@
 @include('site.includes.header')
 <div class="row wrapper border-bottom white-bg page-heading">
     <div class="col-lg-8">
-        <h2>Calendar</h2>
+        <h2>Automation</h2>
         <ol class="breadcrumb">
             <li>
                 <a href="/home">Home</a>
             </li>
+            <li>
+                <a href="user">User</a>
+            </li>
             <li class="active">
-                <strong>Users</strong>
+                <strong>Create</strong>
             </li>
         </ol>
     </div>
@@ -42,7 +45,7 @@
                 <div class="ibox-title">
                     <h5>Create User</h5>
                     <div class="ibox-tools">
-                        <a href="/user/create" class="btn btn-primary" role="button"><i class="fa fa-plus"></i> Add New Admin</a>
+
                     </div>
                 </div>  
                                 <div class="ibox-content">
@@ -51,7 +54,7 @@
                                          
                                         <div class="form-group"><label class="col-sm-2 control-label">Name</label>
                                             <div class="col-sm-10">
-                                                <input name="name" value class="form-control" placeholder="Name">
+                                                <input name="name" value class="form-control">
                                             </div>
                                         </div>
 
@@ -92,7 +95,7 @@
 
                                         <div class="form-group">
                                             <div class="col-sm-4 col-sm-offset-2">
-                                                <a class="btn btn-white" href="/admin/user"><i class="fa fa-close"></i> Cancel</a>
+                                                <a class="btn btn-white" href="/user"><i class="fa fa-close"></i> Cancel</a>
                                                 <button class="user-create btn btn-primary" type="submit"><i class="fa fa-check"></i> Save changes</button>
 
                                             </div>
@@ -103,11 +106,12 @@
         </div>
     </div>
 </div>
+
 @include('site.includes.footer')
 </div>
 </div>
     @include('site.includes.scripts')
-    <script type="text/javascript" src="/js/plugins/chosen/chosen.jquery.js"></script>
+    
 <script type="text/javascript">
     $.ajaxSetup({
         headers: {
@@ -119,7 +123,7 @@
     });
 
 </script>
-
+<script type="text/javascript" src="js/custom/user/addUser.js"></script>
 
 </body>
 

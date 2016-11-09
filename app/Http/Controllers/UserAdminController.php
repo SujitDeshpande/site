@@ -41,4 +41,27 @@ class UserAdminController extends Controller
 
         return view('site.user.create')->with('groups', $groups);
     }
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        $user = User::createAdminUser($request);
+        return ($user);
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        User::where('id', $id)->delete();
+        return;
+    }
 }
