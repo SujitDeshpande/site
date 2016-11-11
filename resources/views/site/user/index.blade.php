@@ -78,37 +78,44 @@
                                                         <div class="modal-body">
                                                             <form role="form">
                                                                 <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">ID</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input readonly="readonly" name="mid" value="{{ $user->id }}" class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <p>&nbsp;</p>
+                                                                <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="name" value="{{ $user->name }}" class="form-control">
+                                                                        <input name="mname" value="{{ $user->name }}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Email</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="email" value="{{ $user->email }}" class="form-control">
+                                                                        <input name="memail" value="{{ $user->email }}" class="form-control">
                                                                     </div>
                                                                 </div>                                        
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Group</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="Group" value="{{ $user->groupname }}" class="form-control">
+                                                                        <input name="mGroup" value="{{ $user->groupname }}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Password</label>
                                                                     <div class="col-sm-10">
-                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="password" value class="form-control">
+                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="mpassword" value class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Confirm Password</label>
                                                                     <div class="col-sm-10">
-                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="confirm_password" value class="form-control">
+                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="mconfirm_password" value class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
@@ -194,7 +201,7 @@
     </script>
 
     <script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
-    <script type="text/javascript" src="js/custom/user/editUser.js"></script>
+    <script type="text/javascript" src="js/custom/user/modifyUser.js"></script>
 
 </body>
 

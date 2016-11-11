@@ -44,7 +44,7 @@ class User extends Authenticatable
         return $users;
     }
 
-        public static function createAdminUser($request)
+    public static function createAdminUser($request)
     {
 
         $user = User::create([
@@ -57,4 +57,22 @@ class User extends Authenticatable
         return $user;
 
     }
+
+    public static function updateAdminUser($id, $request)
+    {
+        $user = User::find($id);
+
+        $user['name'] = $request['name'];
+        $user['group_id']  = intval($request['group']);
+        $user['email']  = $request['email'];
+
+        if(isset($request['password']) && $request['password'] != ''){
+            $user['password'] = \Hash::make($request['password']);
+        }
+        
+        $user->save();        
+
+        return $user;
+
+    }    
 }

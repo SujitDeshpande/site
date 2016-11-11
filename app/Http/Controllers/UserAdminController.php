@@ -69,13 +69,11 @@ class UserAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function update(Request $request, $id)
     {
         
-        //$profile =  User::where('id', $id)->get();
-
-        //return view('site.user.edit')->with('profile', $edit);
-        return view('site.user.edit');
+        $user = User::updateAdminUser($id, $request);
+        return ($user);
     }
 
 }
