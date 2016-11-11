@@ -142,7 +142,7 @@
         </div>
     </div>
 </div>
-<div id="post">Result</div>
+
 @include('site.includes.footer')
 </div>
 </div>

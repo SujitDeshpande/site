@@ -83,15 +83,25 @@ $(document).ready(function(){
 			        }
 			        else{
 			        	console.log(result);
-				        $('form')[0].reset(); // empty the form
-						swal("Nice!", groupname+ " '" + name + "' has been updated", "success"); 
-						$('#myModal').modal('hide');       
+					    swal({
+					        title: "User Has been Updated",
+					        text: groupname+ " '" + name + "' has been updated",
+					        type: "success",
+					        showCancelButton: false,
+					        confirmButtonColor: "#DD6B55",
+					        confirmButtonText: "Ok",
+					        closeOnConfirm: false
+					    }, function () {
+					        $('#myModal').modal('hide'); 
+					    });						
+						      
 			        }
 			    },
 		        error: function(jqXHR, exception) {
 		            //alert("Error:"+jqXHR.status+":"+ jqXHR.responseText+":"+exception);
-		            $('#post').html(jqXHR.responseText);
-		            //console.log(jqXHR.responseText);
+		            //$('#post').html(jqXHR.responseText);
+		            //<div id="post">Result</div>
+		            console.log(jqXHR.responseText);
 		        }
 			});
 	    }
