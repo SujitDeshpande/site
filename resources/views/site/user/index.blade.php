@@ -68,52 +68,55 @@
                                         </button>
                                         <div id="modal-form" class="modal fade" aria-hidden="true">
                                                 <div class="modal-dialog">
-                                                    <div class="modal-content">
+                                                    <div class="modal-content animated bounceInRight">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                            <i class="fa fa-user modal-icon"></i>
+                                                            <h4 class="modal-title">Edit User</h4>
+                                                        </div>
+
                                                         <div class="modal-body">
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Name</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input name="name" value class="form-control">
+                                                                    </div>
+                                                                </div>
 
-                                                                    <p>Edit User</p>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Email</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input name="email" value class="form-control">
+                                                                    </div>
+                                                                </div>                                        
 
-                                                                    <form role="form">
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-2 control-label">Name</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input name="name" value class="form-control">
-                                                                            </div>
-                                                                        </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Group</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input name="Group" value class="form-control">
+                                                                    </div>
+                                                                </div>
 
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-2 control-label">Email</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input name="email" value class="form-control">
-                                                                            </div>
-                                                                        </div>                                        
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Password</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="password" name="password" value class="form-control">
+                                                                    </div>
+                                                                </div>
 
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-2 control-label">Group</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input name="Group" value class="form-control">
-                                                                            </div>
-                                                                        </div>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Confirm Password</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="password" name="confirm_password" value class="form-control">
+                                                                    </div>
+                                                                </div>
 
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-2 control-label">Password</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="password" name="password" value class="form-control">
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="form-group">
-                                                                            <label class="col-sm-2 control-label">Confirm Password</label>
-                                                                            <div class="col-sm-10">
-                                                                                <input type="password" name="confirm_password" value class="form-control">
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="modal-footer">
-                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                                            <button type="button" class="btn btn-primary">Save changes</button>
-                                                                        </div>                                                        
-                                                                    </form>
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                </div>                                                        
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
