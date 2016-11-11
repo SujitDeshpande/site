@@ -11,26 +11,26 @@ $(document).ready(function(){
 
 		var hasError = false;
 		if(name == '') {
-			swal("Oops!", "Need a first name.", "error"); 
+			swal("Error", "Please Enter a Valid Name!", "error"); 
 			hasError = true;
 			$(window).scrollTop(0);
 			return false;
 		}	
 
 	    if(email == '') {
-			swal("Oops!", "We need an email.", "error"); 
+			swal("Error", "Please Enter a Valid Email", "error"); 
+			hasError = true;
+			return false;
+		}
+
+		if(groupname == '') {
+			swal("Error", "Please Select a Group", "error"); 
 			hasError = true;
 			return false;
 		}
 
 		if (password != confirm_password) {
-			swal("Oops!", "Passwords do not match.", "error"); 
-			hasError = true;
-			return false;
-		}
-
-		if(group == '') {
-			swal("Oops!", "We need a group.", "error"); 
+			swal("Error", "Passwords do not match.", "error"); 
 			hasError = true;
 			return false;
 		}
