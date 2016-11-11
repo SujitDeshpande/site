@@ -64,6 +64,7 @@
 									<td><a href="/user/{{$user->id}}">{{ $user->email }}</a></td>
                                     <td><a href="/user/{{$user->id}}">{{ $user->groupname }}</a></td>
 									<td>
+                                        <a data-user="{{ $user->id }}" id="user{{ $user->id }}" class="edit-user btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
 										<a data-user="{{ $user->id }}" id="user{{ $user->id }}" class="delete-user btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
 									</td>
 								</tr>
@@ -135,6 +136,7 @@
     </script>
 
     <script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
+    <script type="text/javascript" src="js/custom/user/editUser.js"></script>
 
 </body>
 

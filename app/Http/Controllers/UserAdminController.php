@@ -74,7 +74,7 @@ class UserAdminController extends Controller
         
         //$profile =  User::where('id', $id)->get();
 
-        //return view('site.user.profile')->with('profile', $profile);
+        //return view('site.user.edit')->with('profile', $edit);
         return view('site.user.edit');
     }
 
