@@ -91,7 +91,10 @@ $(document).ready(function(){
 					        confirmButtonText: "Ok",
 					        closeOnConfirm: true
 					    }, function () {
-					        $('#myModal').modal('hide'); 
+					        $('#myModal').modal('hide');
+					        $('#myModal').on('hidden', function () {
+							  document.location.reload();
+							});
 					    });						
 						      
 			        }
