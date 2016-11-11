@@ -164,6 +164,8 @@
             $(".modal-body #mid").val( arr[0] );
             $(".modal-body #mname").val( arr[1] );
             $(".modal-body #memail").val( arr[2] );
+            $(".modal-body #select-group").val( arr[3] );
+            //alert(lines)
         });
 
         $.ajaxSetup({
