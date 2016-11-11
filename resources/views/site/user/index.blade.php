@@ -76,7 +76,7 @@
                                                         </div>
 
                                                         <div class="modal-body">
-                                                            <div class="col-sm-6 b-r">
+                                                            <div class="row-sm-12">
                                                             <form role="form">
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
