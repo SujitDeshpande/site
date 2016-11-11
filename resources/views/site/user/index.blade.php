@@ -64,60 +64,61 @@
 									<td><a href="/user/{{$user->id}}">{{ $user->email }}</a></td>
                                     <td><a href="/user/{{$user->id}}">{{ $user->groupname }}</a></td>
 									<td>
-                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" href="#modal-form"><i class="fa fa-edit"></i>
                                         </button>
-                                            
-                                        <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog modal-lg">
-                                            <div class="modal-content animated bounceInRight">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <i class="fa fa-user modal-icon"></i>
-                                                        <h4 class="modal-title">Edit User</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Name</label>
-                                                            <div class="col-sm-10">
-                                                                <input name="name" value class="form-control">
-                                                            </div>
-                                                        </div>
+                                        <div id="modal-form" class="modal fade" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
 
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Email</label>
-                                                            <div class="col-sm-10">
-                                                                <input name="email" value class="form-control">
-                                                            </div>
-                                                        </div>                                        
+                                                                    <p>Edit User</p>
 
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Group</label>
-                                                            <div class="col-sm-10">
-                                                                <input name="Group" value class="form-control">
-                                                            </div>
-                                                        </div>
+                                                                    <form role="form">
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Name</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input name="name" value class="form-control">
+                                                                            </div>
+                                                                        </div>
 
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Password</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="password" name="password" value class="form-control">
-                                                            </div>
-                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Email</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input name="email" value class="form-control">
+                                                                            </div>
+                                                                        </div>                                        
 
-                                                        <div class="form-group">
-                                                            <label class="col-sm-2 control-label">Confirm Password</label>
-                                                            <div class="col-sm-10">
-                                                                <input type="password" name="confirm_password" value class="form-control">
-                                                            </div>
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Group</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input name="Group" value class="form-control">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Password</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="password" name="password" value class="form-control">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-2 control-label">Confirm Password</label>
+                                                                            <div class="col-sm-10">
+                                                                                <input type="password" name="confirm_password" value class="form-control">
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="modal-footer">
+                                                                            <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                                        </div>                                                        
+                                                                    </form>
                                                         </div>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                                                        <button type="button" class="btn btn-primary">Save changes</button>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
+                                        </div>                                        
+
 
 										<a data-user="{{ $user->id }}" id="user{{ $user->id }}" class="delete-user btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
 									</td>
