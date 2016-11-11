@@ -64,4 +64,17 @@ class UserAdminController extends Controller
         User::where('id', $id)->delete();
         return;
     }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function profile($id)
+    {
+        
+        $profile =  User::where('id', $id)->get();
+
+        return view('site.user.profile')->with('profile', $profile);
+    }
+
 }
