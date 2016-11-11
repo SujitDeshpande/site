@@ -72,15 +72,47 @@
                                             <div class="modal-content animated bounceInRight">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                        <i class="fa fa-laptop modal-icon"></i>
-                                                        <h4 class="modal-title">Modal title</h4>
-                                                        <small class="font-bold">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</small>
+                                                        <i class="fa fa-user modal-icon"></i>
+                                                        <h4 class="modal-title">Edit User</h4>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p><strong>Lorem Ipsum is simply dummy</strong> text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                                                            printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                                            remaining essentially unchanged.</p>
-                                                                <div class="form-group"><label>Sample Input</label> <input type="email" placeholder="Enter your email" class="form-control"></div>
+                                                        <div class="form-group"><label class="col-sm-2 control-label">Name</label>
+                                                            <div class="col-sm-10">
+                                                                <input name="name" value class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Email</label>
+                                                            <div class="col-sm-10">
+                                                                <input name="email" value class="form-control">
+                                                            </div>
+                                                        </div>                                        
+
+                                                        
+
+                                                        <div class="form-group"><label class="col-sm-2 control-label">Group</label>
+                                                            <div class="col-sm-10">
+                                                                <input name="Group" value class="form-control">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="hr-line-dashed"></div>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Password</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="password" name="password" value class="form-control">
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Confirm Password</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="password" name="confirm_password" value class="form-control">
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>

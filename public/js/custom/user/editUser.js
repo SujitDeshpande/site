@@ -7,7 +7,11 @@ $(".edit-user").click(function(){
 		$.ajax({
 		    url: '/user/'+ user_id +'/edit',
 		    type: 'GET',
-		    
+
+		    success: function(result) {
+		        $(selector).closest('tr').fadeOut(1000);
+		        swal("Deleted!", "This user has been deleted.", "success");
+		    },
 	        error: function(jqXHR, exception) {
 			    //alert("Error:"+jqXHR.status+":"+ jqXHR.responseText+":"+exception);
 			    //$('#post').html(jqXHR.responseText);
