@@ -26,8 +26,10 @@ class UserAdminController extends Controller
     {
         
         $users = User::getAdminUsers();
+        $groups = UserGroup::pluck('name', 'id');
 
-        return view('site.user.index')->with('users', $users);
+        return view('site.user.index')->with('users', $users)
+                                      ->with('groups', $groups);
     }
     /**
      * Display a listing of the resource.

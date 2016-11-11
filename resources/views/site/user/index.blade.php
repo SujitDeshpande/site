@@ -101,7 +101,8 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Group</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="mGroup" value="{{ $user->groupname }}" class="form-control">
+                                                                    <div class="col-sm-10">
+                                                                    {!! Form::select('group', $groups , null, ['class'=>'form-control', 'id'=>'select-group']) !!}
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
@@ -120,8 +121,8 @@
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="modal-footer">
-                                                                    <button type="button" class=user-update btn btn-white" data-dismiss="modal">Close</button>
-                                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                                    <button type="button" class= "btn btn-white" data-dismiss="modal">Close</button>
+                                                                    <button type="button" class="user-update btn btn-primary">Save changes</button>
                                                                 </div>                                                        
                                                             </form>
                                                         </div>
