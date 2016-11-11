@@ -60,9 +60,9 @@
 								@foreach($users as $user)
 								<tr>
 									<td> {{$user->id}} </td>
-									<td><a href="/profile/{{$user->id}}">{{ $user->name }}</a></td>
-									<td><a href="/profile/{{$user->id}}">{{ $user->email }}</a></td>
-                                    <td><a href="/profile/{{$user->id}}">{{ $user->groupname }}</a></td>
+									<td><a href="/user/{{$user->id}}">{{ $user->name }}</a></td>
+									<td><a href="/user/{{$user->id}}">{{ $user->email }}</a></td>
+                                    <td><a href="/user/{{$user->id}}">{{ $user->groupname }}</a></td>
 									<td>
 										<a data-user="{{ $user->id }}" id="user{{ $user->id }}" class="delete-user btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
 									</td>
