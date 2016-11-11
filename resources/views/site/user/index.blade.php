@@ -80,28 +80,28 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">ID</label>
                                                                     <div class="col-sm-10">
-                                                                        <input readonly="readonly" name="mid" value="{{ $user->id }}" class="form-control">
+                                                                        <input readonly="readonly" name="mid" value="{{$user->id}}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="mname" value="{{ $user->name }}" class="form-control">
+                                                                        <input name="mname" value="{{$user->name}}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Email</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="memail" value="{{ $user->email }}" class="form-control">
+                                                                        <input name="memail" value="{{$user->email}}" class="form-control">
                                                                     </div>
                                                                 </div>                                        
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Group</label>
                                                                     <div class="col-sm-10">
-                                                                    {!! Form::select('group', $groups , $user->groupname, ['class'=>'form-control', 'id'=>'select-group']) !!}
+                                                                    {!! Form::select('group', $groups , $user->groupname, ['class'=>'form-control', 'id'=>'select-group', 'value'=>'{{ $user->groupname }}']) !!}
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
