@@ -87,28 +87,28 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Email</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="email" value class="form-control">
+                                                                        <input name="email" value="{{ $user->email }}" class="form-control">
                                                                     </div>
                                                                 </div>                                        
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Group</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="Group" value class="form-control">
+                                                                        <input name="Group" value="{{ $user->groupname }}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Password</label>
                                                                     <div class="col-sm-10">
-                                                                        <input type="password" name="password" value class="form-control">
+                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="password" value class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Confirm Password</label>
                                                                     <div class="col-sm-10">
-                                                                        <input type="password" name="confirm_password" value class="form-control">
+                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="confirm_password" value class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
