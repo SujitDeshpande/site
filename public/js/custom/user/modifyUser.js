@@ -18,7 +18,7 @@ $(document).ready(function(){
 		}	
 
 	    if(email == '') {
-			swal("Error", "Please Enter a Valid Email", "error"); 
+			swal("Error", "Please Enter a Valid Email.", "error"); 
 			hasError = true;
 			return false;
 		}
