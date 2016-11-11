@@ -64,7 +64,6 @@
 									<td><a href="/user/{{$user->id}}">{{ $user->email }}</a></td>
                                     <td><a href="/user/{{$user->id}}">{{ $user->groupname }}</a></td>
 									<td>
-                                        <a data-user="{{ $user->id }}" id="user{{ $user->id }}" class="edit-user btn btn-info btn-sm"><i class="fa fa-edit"></i></a>
                                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">
                                         </button>
                                             </div>
