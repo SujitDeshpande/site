@@ -84,7 +84,8 @@ $(document).ready(function(){
 			        else{
 			        	console.log(result);
 				        $('form')[0].reset(); // empty the form
-						swal("Nice!", groupname+ " '" + name + "' has been updated", "success");        
+						swal("Nice!", groupname+ " '" + name + "' has been updated", "success"); 
+						$('#myModal').modal('hide');       
 			        }
 			    },
 		        error: function(jqXHR, exception) {
