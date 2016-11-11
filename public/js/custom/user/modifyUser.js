@@ -88,9 +88,8 @@ $(document).ready(function(){
 					        text: groupname+ " '" + name + "' has been updated",
 					        type: "success",
 					        showCancelButton: false,
-					        confirmButtonColor: "#DD6B55",
 					        confirmButtonText: "Ok",
-					        closeOnConfirm: false
+					        closeOnConfirm: true
 					    }, function () {
 					        $('#myModal').modal('hide'); 
 					    });						
