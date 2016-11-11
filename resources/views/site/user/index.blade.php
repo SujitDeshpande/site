@@ -68,7 +68,7 @@
                                         </button>
                                             </div>
                                         <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
-                                            <div class="modal-dialog">
+                                            <div class="modal-dialog modal-lg">
                                             <div class="modal-content animated bounceInRight">
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -76,7 +76,8 @@
                                                         <h4 class="modal-title">Edit User</h4>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <div class="form-group"><label class="col-sm-2 control-label">Name</label>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Name</label>
                                                             <div class="col-sm-10">
                                                                 <input name="name" value class="form-control">
                                                             </div>
@@ -89,21 +90,18 @@
                                                             </div>
                                                         </div>                                        
 
-                                                        
-
-                                                        <div class="form-group"><label class="col-sm-2 control-label">Group</label>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-2 control-label">Group</label>
                                                             <div class="col-sm-10">
                                                                 <input name="Group" value class="form-control">
                                                             </div>
                                                         </div>
 
-                                                        <div class="hr-line-dashed"></div>
                                                         <div class="form-group">
                                                             <label class="col-sm-2 control-label">Password</label>
                                                             <div class="col-sm-10">
                                                                 <input type="password" name="password" value class="form-control">
                                                             </div>
-
                                                         </div>
 
                                                         <div class="form-group">
@@ -111,7 +109,6 @@
                                                             <div class="col-sm-10">
                                                                 <input type="password" name="confirm_password" value class="form-control">
                                                             </div>
-
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
