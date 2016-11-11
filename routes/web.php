@@ -24,5 +24,5 @@ Route::get('/create', 'UserAdminController@create');
 Route::post('/user', 'UserAdminController@store');
 Route::get('/user', 'UserAdminController@index');
 Route::delete('/user/{id}', 'UserAdminController@destroy');
-Route::post('/user/{id}', 'UserAdminController@profile');
+Route::put('/user/{id}', 'UserAdminController@profile');
 //Route::resource('user', 'UserAdminController');
