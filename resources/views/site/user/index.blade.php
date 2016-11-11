@@ -64,9 +64,9 @@
 									<td><a href="/user/{{$user->id}}">{{ $user->email }}</a></td>
                                     <td><a href="/user/{{$user->id}}">{{ $user->groupname }}</a></td>
 									<td>
-                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" href="#modal-form"><i class="fa fa-edit"></i>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i>
                                         </button>
-                                        <div id="modal-form" class="modal fade" aria-hidden="true">
+                                        <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content animated bounceInRight">
                                                         <div class="modal-header">
