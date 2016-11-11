@@ -59,12 +59,12 @@
 							<tbody>	
 								@foreach($users as $user)
 								<tr>
-									<td> {{$user->id}} </td>
+									<td>{{ $user->id }} </td>
 									<td>{{ $user->name }}</td>
 									<td>{{ $user->email }}</td>
                                     <td>{{ $user->groupname }}</td>
 									<td>
-                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" data-bid="{{ $user->id }},{{ $user->name }},{{ $user->email }},{{ $user->groupname }} "><i class="fa fa-edit"></i>
                                         </button>
                                         <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -80,42 +80,42 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">ID</label>
                                                                     <div class="col-sm-10">
-                                                                        <input readonly="readonly" name="mid" value= {{$user->id}} class="form-control">
+                                                                        <input readonly="readonly" name="mid" id="mid" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="mname" value="{{$user->name}}" class="form-control">
+                                                                        <input name="mname" id="mname" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Email</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="memail" value="{{$user->email}}" class="form-control">
+                                                                        <input name="memail" id="memail" class="form-control">
                                                                     </div>
                                                                 </div>                                        
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Group</label>
                                                                     <div class="col-sm-10">
-                                                                    {!! Form::select('group', $groups , $user->groupname, ['class'=>'form-control', 'id'=>'select-group', 'value'=>'{{ $user->groupname }}']) !!}
+                                                                    {!! Form::select('group', $groups , $user->groupname, ['class'=>'form-control', 'id'=>'select-group']) !!}
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Password</label>
                                                                     <div class="col-sm-10">
-                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="mpassword" value class="form-control">
+                                                                        <input type="password" placeholder="Leave this field blank to keep your password unchanged..." name="mpassword" value class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Confirm Password</label>
                                                                     <div class="col-sm-10">
-                                                                        <input type="password" placeholder="Leave this field blank to keep the password unchanged" name="mconfirm_password" value class="form-control">
+                                                                        <input type="password" placeholder="Leave this field blank to keep your password unchanged..." name="mconfirm_password" value class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
@@ -151,6 +151,23 @@
 
     <!-- Page-Level Scripts -->
     <script>
+        $('#myModal').on('hidden.bs.modal', function () {
+          $(this).removeData('bs.modal');
+        });
+
+        $('#myModal').on('show.bs.modal', function (event) {
+            
+            var button = $(event.relatedTarget)
+            var csv = button.data('bid')
+
+            var arr = csv.split(',');
+            $(".modal-body #mid").val( arr[0] );
+            $(".modal-body #mname").val( arr[1] );
+            $(".modal-body #memail").val( arr[2] );
+            //$(".modal-body #select-group").val( arr[3] );
+            //alert(lines)
+        });
+
         $.ajaxSetup({
 	        headers: {
 	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
@@ -160,7 +177,7 @@
             $('.dataTables-example').DataTable({
                 dom: '<"html5buttons"B>lTfgitp',
                 buttons: [
-                    { extend: 'copy'}
+                    { extend: 'null'}
 
                 ]
 
