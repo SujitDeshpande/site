@@ -80,7 +80,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">ID</label>
                                                                     <div class="col-sm-10">
-                                                                        <input readonly="readonly" name="mid" value="{{ $user->id }}" class="form-control">
+                                                                        <input  name="mid" value="{{ $user->id }}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
