@@ -92,9 +92,7 @@ $(document).ready(function(){
 					        closeOnConfirm: true
 					    }, function () {
 					        $('#myModal').modal('hide');
-					        $('#myModal').on('hidden', function () {
 							  document.location.reload();
-							});
 					    });						
 						      
 			        }
