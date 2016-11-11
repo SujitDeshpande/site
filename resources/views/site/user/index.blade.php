@@ -60,7 +60,7 @@
 								@foreach($users as $user)
 								<tr>
 									<td> {{$user->id}} </td>
-									<td><a href="/profile">{{ $user->name }}</a></td>
+									<td><a href="/profile/{{$user->id}}">{{ $user->name }}</a></td>
 									<td><a href="/profile/{{$user->id}}">{{ $user->email }}</a></td>
                                     <td><a href="/profile/{{$user->id}}">{{ $user->groupname }}</a></td>
 									<td>

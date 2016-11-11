@@ -69,10 +69,10 @@ class UserAdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function profile()
+    public function profile($id)
     {
         
-        //$profile =  User::where('id', $id)->get();
+        $profile =  User::where('id', $id)->get();
 
         //return view('site.user.profile')->with('profile', $profile);
         return view('site.user.profile');
