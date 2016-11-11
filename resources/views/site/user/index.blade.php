@@ -53,7 +53,7 @@
 									<td>Name</td>
 									<td>Email</td>
                                     <td>Role</td>
-									<td>Delete User</td>
+									<td>Edit / Delete User</td>
 								</tr>
 							</thead>
 							<tbody>	
