@@ -80,7 +80,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="name" value class="form-control">
+                                                                        <input name="name" value="{{ $user->name }}" class="form-control">
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
