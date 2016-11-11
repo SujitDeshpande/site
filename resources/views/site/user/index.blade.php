@@ -76,6 +76,7 @@
                                                         </div>
 
                                                         <div class="modal-body">
+                                                            <div class="col-sm-6 b-r">
                                                             <form role="form">
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
@@ -117,6 +118,7 @@
                                                                     <button type="button" class="btn btn-primary">Save changes</button>
                                                                 </div>                                                        
                                                             </form>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
