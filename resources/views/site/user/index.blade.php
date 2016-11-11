@@ -83,16 +83,35 @@
                                                                         <input name="name" value class="form-control">
                                                                     </div>
                                                                 </div>
-
+                                                                <p> </p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Email</label>
                                                                     <div class="col-sm-10">
                                                                         <input name="email" value class="form-control">
                                                                     </div>
                                                                 </div>                                        
-
-
-
+                                                                <p> </p>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Group</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input name="Group" value class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <p> </p>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Password</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="password" name="password" value class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <p> </p>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Confirm Password</label>
+                                                                    <div class="col-sm-10">
+                                                                        <input type="password" name="confirm_password" value class="form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <p> </p>
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
                                                                     <button type="button" class="btn btn-primary">Save changes</button>
