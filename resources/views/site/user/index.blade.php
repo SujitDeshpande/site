@@ -60,9 +60,9 @@
 								@foreach($users as $user)
 								<tr>
 									<td> {{$user->id}} </td>
-									<td><a href="/user/{{$user->id}}">{{ $user->name }}</a></td>
-									<td><a href="/user/{{$user->id}}">{{ $user->email }}</a></td>
-                                    <td><a href="/user/{{$user->id}}">{{ $user->groupname }}</a></td>
+									<td>{{ $user->name }}</td>
+									<td>{{ $user->email }}</td>
+                                    <td>{{ $user->groupname }}</td>
 									<td>
                                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><i class="fa fa-edit"></i>
                                         </button>
