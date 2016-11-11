@@ -89,11 +89,10 @@ $(document).ready(function(){
 			    },
 		        error: function(jqXHR, exception) {
 		            //alert("Error:"+jqXHR.status+":"+ jqXHR.responseText+":"+exception);
-		            //$('#post').html(jqXHR.responseText);
-		            console.log(jqXHR.responseText);
+		            $('#post').html(jqXHR.responseText);
+		            //console.log(jqXHR.responseText);
 		        }
 			});
-
 	    }
 	    return false;
 	});
