@@ -53,6 +53,7 @@
 									<td>Name</td>
 									<td>Email</td>
                                     <td>Role</td>
+                                    <td>Status</td>
 									<td>Edit / Delete User</td>
 								</tr>
 							</thead>
@@ -63,6 +64,8 @@
 									<td>{{ $user->name }}</td>
 									<td>{{ $user->email }}</td>
                                     <td>{{ $user->groupname }}</td>
+                                    <td class="client-status"><span class="label label-primary">Active</span></td>
+
 									<td>
                                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" data-bid="{{ $user->id }},{{ $user->name }},{{ $user->email }},{{ $user->groupname }} "><i class="fa fa-edit"></i>
                                         </button>
