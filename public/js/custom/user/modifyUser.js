@@ -9,6 +9,9 @@ $(document).ready(function(){
 		var group = $('#select-group option:selected').val();
 		var groupname = $('#select-group option:selected').text();
 
+		var status = $('#status-group option:selected').val();
+		var statusname = $('#status-group option:selected').text();
+
 		var hasError = false;
 		if(name == '') {
 			swal("Error", "Please Enter a Valid Name!", "error"); 
@@ -25,6 +28,12 @@ $(document).ready(function(){
 
 		if(groupname == '') {
 			swal("Error", "Please Select a Group", "error"); 
+			hasError = true;
+			return false;
+		}
+
+		if(statusname == '') {
+			swal("Error", "Please Select a Status", "error"); 
 			hasError = true;
 			return false;
 		}
@@ -46,6 +55,7 @@ $(document).ready(function(){
 		            name: $('input[name="mname"]').val(),
 		            email: $('input[name="memail"]').val(),
 		            group: $('#select-group option:selected').val(),
+		            status: $('#status-group option:selected').val(),
 		            password: $('input[name="mpassword"]').val()
 		        }),
 			    success: function(result) {
@@ -66,6 +76,12 @@ $(document).ready(function(){
 				        if(errors.hasOwnProperty("group")) {
 				        	$.each(errors.group, function(index){
 				        		$('#select-group').parent().append('<div class="req">' + errors.group[index]  + '</div>');	
+				        	});
+				        }
+
+				        if(errors.hasOwnProperty("status")) {
+				        	$.each(errors.status, function(index){
+				        		$('#status-group').parent().append('<div class="req">' + errors.status[index]  + '</div>');	
 				        	});
 				        }
 				        

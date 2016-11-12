@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use App\Models\UserGroup;
+use App\Models\UserStatus;
 
 class User extends Authenticatable
 {
@@ -22,7 +23,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','group_id'
+        'name', 'email', 'password','group_id', 'status'
     ];
 
     /**
@@ -39,7 +40,9 @@ class User extends Authenticatable
         $users = User::get();
         foreach ($users as $user) {
             $groupname = UserGroup::where('id', $user->group_id)->value('name');
+            $statusname = UserStatus::where('id', $user->status)->value('name');
             $user["groupname"] = $groupname;
+            $user["statusname"] = $statusname;
         }
         return $users;
     }
@@ -48,9 +51,10 @@ class User extends Authenticatable
     {
 
         $user = User::create([
-            'name' => $request['name'],
+            'name'      => $request['name'],
             'email'     => $request['email'],
             'group_id'  => intval($request['group']),
+            'status'    => intval($request['status']),
             'password'  => \Hash::make($request['password'])
         ]);
 
@@ -62,9 +66,10 @@ class User extends Authenticatable
     {
         $user = User::find($id);
 
-        $user['name'] = $request['name'];
-        $user['group_id']  = intval($request['group']);
-        $user['email']  = $request['email'];
+        $user['name']       = $request['name'];
+        $user['group_id']   = intval($request['group']);
+        $user['status']     = intval($request['status']);
+        $user['email']      = $request['email'];
 
         if(isset($request['password']) && $request['password'] != ''){
             $user['password'] = \Hash::make($request['password']);

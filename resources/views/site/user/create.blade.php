@@ -73,6 +73,12 @@
                                             </div>
                                         </div>
 
+                                        <div class="form-group"><label class="col-sm-2 control-label">Group</label>
+                                            <div class="col-sm-10">
+                                                {!! Form::select('status', $status , null, ['class'=>'form-control', 'id'=>'status-group']) !!}
+                                            </div>
+                                        </div>
+
                                         <div class="hr-line-dashed"></div>
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label">Password</label>

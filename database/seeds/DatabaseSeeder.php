@@ -22,12 +22,27 @@ class DatabaseSeeder extends Seeder
             'name' => "User"
             ]);
 
+        DB::table('user_status')->delete();
+
+        DB::table('user_status')->insert([
+            'name' => "Active"
+            ]);
+
+        DB::table('user_status')->insert([
+            'name' => "Inactive"
+            ]);
+
+        DB::table('user_status')->insert([
+            'name' => "Awaiting Approval"
+            ]);
+
         DB::table('users')->delete();
 
         DB::table('users')->insert([
             'name' => "Sujit Deshpande",
             'email' => "sujit.md@gmail.com",
             'password' => Hash::make('password'),
+            'status' => '1',
             'group_id' => '1'
             ]);
 
@@ -35,6 +50,7 @@ class DatabaseSeeder extends Seeder
             'name' => "Sujit Deshpande",
             'email' => "sujit.deshpande@ness.com",
             'password' => Hash::make('password'),
+            'status' => '1',
             'group_id' => '1'
             ]);
     }

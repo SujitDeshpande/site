@@ -64,7 +64,15 @@
 									<td>{{ $user->name }}</td>
 									<td>{{ $user->email }}</td>
                                     <td>{{ $user->groupname }}</td>
-                                    <td class="client-status"><span class="label label-primary">Active</span></td>
+                                    <td>
+                                    @if ( $user->statusname == "Active")
+                                    <span class="label label-primary">{{ $user->statusname }}</span>
+                                    @elseif ( $user->statusname  == "Inactive")
+                                    <span class="label label-danger">{{ $user->statusname }}</span>
+                                    @elseif ( $user->statusname == "Awaiting Approval")
+                                    <span class="label label-warning">{{ $user->statusname }}</span>
+                                    @endif
+                                    </td>
 
 									<td>
                                         <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" data-bid="{{ $user->id }},{{ $user->name }},{{ $user->email }},{{ $user->groupname }} "><i class="fa fa-edit"></i>
@@ -105,6 +113,13 @@
                                                                     <label class="col-sm-2 control-label">Group</label>
                                                                     <div class="col-sm-10">
                                                                     {!! Form::select('group', $groups , $user->groupname, ['class'=>'form-control', 'id'=>'select-group']) !!}
+                                                                    </div>
+                                                                </div>
+                                                                <p>&nbsp;</p>
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-2 control-label">Status</label>
+                                                                    <div class="col-sm-10">
+                                                                    {!! Form::select('status', $status , $user->statusname, ['class'=>'form-control', 'id'=>'status-group']) !!}
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
@@ -167,7 +182,7 @@
             $(".modal-body #mid").val( arr[0] );
             $(".modal-body #mname").val( arr[1] );
             $(".modal-body #memail").val( arr[2] );
-            $(".modal-body #select-group").val( arr[3] );
+            //$(".modal-body #select-group").val( arr[3] );
             //alert(lines)
         });
 

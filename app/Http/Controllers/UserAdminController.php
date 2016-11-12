@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 use App\Models\UserGroup;
+use App\Models\UserStatus;
 
 class UserAdminController extends Controller
 {
@@ -27,8 +28,10 @@ class UserAdminController extends Controller
         
         $users = User::getAdminUsers();
         $groups = UserGroup::pluck('name', 'id');
+        $status = UserStatus::pluck('name', 'id');
 
         return view('site.user.index')->with('users', $users)
+                                      ->with('status', $status)
                                       ->with('groups', $groups);
     }
     /**
@@ -40,8 +43,9 @@ class UserAdminController extends Controller
     {
 
         $groups = UserGroup::pluck('name', 'id');
+        $status = UserStatus::pluck('name', 'id');
 
-        return view('site.user.create')->with('groups', $groups);
+        return view('site.user.create')->with('status', $status)->with('groups', $groups);
     }
     /**
      * Store a newly created resource in storage.
