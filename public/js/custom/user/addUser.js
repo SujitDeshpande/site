@@ -105,8 +105,18 @@ $(document).ready(function(){
 			        }
 			        else{
 			        	console.log(result);
-				        $('form')[0].reset(); // empty the form
-						swal("Nice!", groupname+ " '" + name + "' has been created", "success");        
+
+					    swal({
+					        title: "User Has been Created",
+					        text: groupname+ " '" + name + "' has been created",
+					        type: "success",
+					        showCancelButton: false,
+					        confirmButtonText: "Ok",
+					        closeOnConfirm: true
+					    }, function () {
+					        window.location="/user"; 
+					    });	   
+						  
 			        }
 			    },
 		        error: function(jqXHR, exception) {
