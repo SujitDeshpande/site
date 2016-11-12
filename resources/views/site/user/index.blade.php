@@ -46,7 +46,7 @@
 	            </div>  
 	            <div class="ibox-content">
 	            	<div class="table-responsive">
-						<table class="table table-striped table-bordered table-hover dataTables-example">
+						<table class="table table-striped table-bordered table-hover" id="dataTable">
 							<thead>
 								<tr>
 									<td>Id</td>
@@ -184,48 +184,10 @@
 	            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 	        }
 		});    
-        $(document).ready(function(){
-            $('.dataTables-example').DataTable({
-                dom: '<"html5buttons"B>lTfgitp',
-                buttons: [
-                    { extend: 'copy'}
-
-                ]
-
-            });
-
-            /* Init DataTables */
-            var oTable = $('#editable').DataTable();
-
-            /* Apply the jEditable handlers to the table */
-            oTable.$('td').editable( '../example_ajax.php', {
-                "callback": function( sValue, y ) {
-                    var aPos = oTable.fnGetPosition( this );
-                    oTable.fnUpdate( sValue, aPos[0], aPos[1] );
-                },
-                "submitdata": function ( value, settings ) {
-                    return {
-                        "row_id": this.parentNode.getAttribute('id'),
-                        "column": oTable.fnGetPosition( this )[2]
-                    };
-                },
-
-                "width": "90%",
-                "height": "100%"
-            } );
-
-
+        $(document).ready(function () {
+            $('#dataTable').DataTable();
         });
 
-        function fnClickAddRow() {
-            $('#editable').dataTable().fnAddData( [
-                "Custom row",
-                "New row",
-                "New row",
-                "New row",
-                "New row" ] );
-
-        }
     </script>
 
     <script type="text/javascript" src="js/custom/user/deleteUser.js"></script>
