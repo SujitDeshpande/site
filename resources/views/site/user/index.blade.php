@@ -89,6 +89,9 @@
                                                         <div class="modal-body">
                                                             <form role="form">
                                                                 <div class="form-group">
+                                                                        <input name="mid" id="mid" class="form-control" type="hidden">
+                                                                </div>
+                                                                <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
                                                                         <input name="mname" id="mname" class="form-control">
@@ -172,7 +175,7 @@
             var csv = button.data('bid')
 
             var arr = csv.split(',');
-            //$(".modal-body #mid").val( arr[0] );
+            $(".modal-body #mid").val( arr[0] );
             $(".modal-body #mname").val( arr[1] );
             $(".modal-body #memail").val( arr[2] );
             //$(".modal-body #select-group").val( arr[3] );
@@ -185,7 +188,7 @@
 	        }
 		});    
         $(document).ready(function () {
-            $('#dataTable').DataTable();
+            $('#dataTable').DataTable()
         });
 
     </script>

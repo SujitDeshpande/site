@@ -12,6 +12,8 @@ $(document).ready(function(){
 		var status = $('#status-group option:selected').val();
 		var statusname = $('#status-group option:selected').text();
 
+
+
 		var hasError = false;
 		if(name == '') {
 			swal("Error", "Please Enter a Valid Name!", "error"); 
