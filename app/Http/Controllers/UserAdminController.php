@@ -41,11 +41,11 @@ class UserAdminController extends Controller
      */
     public function create()
     {
-
+        $users = User::getAdminUsers();
         $groups = UserGroup::pluck('name', 'id');
         $status = UserStatus::pluck('name', 'id');
 
-        return view('site.user.create')->with('status', $status)->with('groups', $groups);
+        return view('site.user.create')->with('status', $status)->with('users', $users)->with('groups', $groups);
     }
     /**
      * Store a newly created resource in storage.

@@ -5,8 +5,24 @@
                     <div class="dropdown profile-element">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">{{ Auth::user()->name }}</strong>
-                             </span> <span class="text-muted text-xs block">Ness Architect <b class="caret"></b></span> </span> </a>
+                             </span> 
+                             
+                             <span class="text-muted text-xs block">
+                             @foreach($users as $user)
+                             @if ( $user->id == Auth::user()->id)
+                             {{ $user->groupname}}
+                             @endif
+                             @endforeach
+                             <b class="caret"></b></span> 
+                             
+                             </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                <li>
+                                <a href="#">
+                                    Profile
+                                </a>
+                                </li>
+                                <li class="divider"></li>
                                 <li>
                                 <a href="{{ url('/logout') }}"
                                     onclick="event.preventDefault();

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('site.dashboard.dashboard');
+        $users = User::getAdminUsers();
+        return view('site.dashboard.dashboard')->with('users', $users);
     }
 }

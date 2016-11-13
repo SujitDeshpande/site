@@ -30,7 +30,7 @@
                 <a href="/home">Home</a>
             </li>
             <li>
-                <a href="user">User</a>
+                <a href="user">Users</a>
             </li>
             <li class="active">
                 <strong>Create</strong>
@@ -73,7 +73,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="form-group"><label class="col-sm-2 control-label">Group</label>
+                                        <div class="form-group"><label class="col-sm-2 control-label">Status</label>
                                             <div class="col-sm-10">
                                                 {!! Form::select('status', $status , null, ['class'=>'form-control', 'id'=>'status-group']) !!}
                                             </div>
