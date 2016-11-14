@@ -44,7 +44,7 @@
                 @else
                 <li>
                 @endif
-                    <a href="/home"><i class="fa fa-home"></i> <span class="nav-label">Dashboard</span></a>
+                    <a href="/home"><i class="fa fa-home"></i> <span class="nav-label">Control Panel</span></a>
                 </li>
                 @if ( Request::is('calendar'))
                 <li class="active">
