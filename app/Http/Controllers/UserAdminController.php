@@ -88,7 +88,7 @@ class UserAdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function profile($id)
+    public function show($id)
     {
         $users = User::getAdminUsers();
 
