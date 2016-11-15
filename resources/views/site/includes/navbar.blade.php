@@ -3,7 +3,7 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                            <img alt="image" class="img-circle" src="/uploads/avatars/default.jpg" style="width:100px; height:100px" />
+                            <img alt="image" class="img-circle" src="/uploads/avatars/default.jpg" width="3%" height="3%" />
                                      </span>
 
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
