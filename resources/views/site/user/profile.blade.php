@@ -54,14 +54,14 @@
                          
                         <div class="form-group"><label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
-                                <input name="name" value class="form-control">
+                                <input name="name" value="{{Auth::user()->name}}" class="form-control">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input name="email" value class="form-control" readonly>
+                                <input name="email" value="{{Auth::user()->email}}" class="form-control" readonly>
                             </div>
                         </div>                                        
 

@@ -47,6 +47,18 @@ class User extends Authenticatable
         return $users;
     }
 
+    public static function getUser($id)
+    {
+        $users = User::get();
+        foreach ($users as $user) {
+            $groupname = UserGroup::where('id', $user->group_id)->value('name');
+            $statusname = UserStatus::where('id', $user->status)->value('name');
+            $user["groupname"] = $groupname;
+            $user["statusname"] = $statusname;
+        }
+        return $users;
+    }    
+
     public static function createAdminUser($request)
     {
 
