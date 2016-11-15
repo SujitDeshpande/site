@@ -51,7 +51,12 @@
                 <div class="ibox-content">
 
                     <form method="get" class="form-horizontal" autocomplete="off">
-                         
+
+
+                        <img src="/uploads/avatars/default.jpg" alt="image" class="img-circle">
+                        
+                        <div class="hr-line-dashed"></div>
+
                         <div class="form-group"><label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
                                 <input name="name" value="{{Auth::user()->name}}" class="form-control" autofocus>
