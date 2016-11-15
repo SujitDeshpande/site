@@ -54,7 +54,7 @@
                          
                         <div class="form-group"><label class="col-sm-2 control-label">Name</label>
                             <div class="col-sm-10">
-                                <input name="name" value="{{Auth::user()->name}}" class="form-control">
+                                <input name="name" value="{{Auth::user()->name}}" class="form-control" autofocus>
                             </div>
                         </div>
 
@@ -87,8 +87,8 @@
 
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
-                                <a class="btn btn-white" href="/user"><i class="fa fa-close"></i> Cancel</a>
-                                <button class="user-create btn btn-primary" type="submit"><i class="fa fa-check"></i> Save changes</button>
+                                <a class="btn btn-white" href="/home"><i class="fa fa-close"></i> Cancel</a>
+                                <button class="user-update btn btn-primary" type="submit"><i class="fa fa-check"></i> Save changes</button>
 
                             </div>
                         </div>
