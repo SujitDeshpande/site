@@ -53,7 +53,7 @@
                     <form enctype="multipart/form-data" action="/profile" method="POST" class="form-horizontal" autocomplete="off">
 
 
-                        <img src="/uploads/avatars/default.jpg" alt="image" class="img-circle" width="20%" height="20%">
+                        <img src="/uploads/avatars/{{Auth::user()->avatar}}" alt="image" class="img-circle" width="20%" height="20%">
 
                         <input type="file" name="avatar">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
