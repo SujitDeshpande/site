@@ -3,7 +3,9 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                            <img alt="image" class="img-circle" src="/uploads/avatars/{{Auth::user()->avatar}}" width="40%" height="40%" />
+                    <a href="{{ URL::action('UserAdminController@show') }}">
+                                
+                            <img alt="image" class="img-circle" src="/uploads/avatars/{{Auth::user()->avatar}}" width="40%" height="40%" /></a>
                             </span>
 
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">

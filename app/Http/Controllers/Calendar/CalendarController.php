@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class CalendarController extends Controller
 {
@@ -23,6 +24,7 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        return view('site.calendar.calendar');
+        $users = User::getAdminUsers();
+        return view('site.calendar.calendar')->with('users', $users);
     }
 }

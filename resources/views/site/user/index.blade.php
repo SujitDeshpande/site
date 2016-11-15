@@ -75,15 +75,14 @@
                                     </td>
 
 									<td>
-                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" data-bid="{{ $user->id }},{{ $user->name }},{{ $user->email }},{{ $user->groupname }} "><i class="fa fa-edit"></i>
+                                        <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" data-bid="{{ $user->id }},{{ $user->name }},{{ $user->email }},{{ $user->groupname }},{{ $user->avatar }} "><i class="fa fa-edit"></i>
                                         </button>
                                         <div class="modal inmodal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content animated bounceInRight">
                                                         <div class="modal-header">
                                                             <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                            <i class="fa fa-user modal-icon"></i>
-                                                            <h4 class="modal-title">Edit User</h4>
+                                                            <img name="mimage" id="mimage" class="mimage modal-icon img-circle"  alt="image" width="20%" height="20%"/>
                                                         </div>
 
                                                         <div class="modal-body">
@@ -178,6 +177,8 @@
             $(".modal-body #mid").val( arr[0] );
             $(".modal-body #mname").val( arr[1] );
             $(".modal-body #memail").val( arr[2] );
+            $('.modal-header #mimage').attr('src', '/uploads/avatars/'+arr[4]);
+            //$(".modal-body #mimage").val( arr[4] );
             //$(".modal-body #select-group").val( arr[3] );
             //alert(lines)
         });

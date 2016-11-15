@@ -52,11 +52,13 @@
 
                     <form enctype="multipart/form-data" action="/profile" method="POST" class="form-horizontal" autocomplete="off">
 
-
+                        
+                        <center>
+                        
                         <img src="/uploads/avatars/{{Auth::user()->avatar}}" alt="image" class="img-circle" width="20%" height="20%">
                         <p>&nbsp;</p>
                         <input type="file" name="avatar">
-                        <input type="hidden" name="_token" value="{{csrf_token()}}">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}"></center>
 
                         
                         <div class="hr-line-dashed"></div>
@@ -97,7 +99,7 @@
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
                                 <a class="btn btn-white" href="/home"><i class="fa fa-close"></i> Cancel</a>
-                                <button class="user-update btn btn-primary" type="submit"><i class="fa fa-check"></i> Save changes</button>
+                                <button class="user-update btn btn-primary" type="submit"><i class="fa fa-check"></i> Save</button>
 
                             </div>
                         </div>
