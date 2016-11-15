@@ -18,7 +18,7 @@
                              </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li>
-                                <a href="/user/"+{{Auth::user()->id}}>
+                                <a href="/user/{{Auth::user()->id}}">
                                     Profile
                                 </a>
                                 </li>

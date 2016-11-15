@@ -38,7 +38,66 @@
         </ol>
     </div>
 </div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox">
+                <div class="ibox-title">
+                    <h5>Profile</h5>
+                    <div class="ibox-tools">
 
+                    </div>
+                </div>  
+                <div class="ibox-content">
+
+                    <form method="get" class="form-horizontal" autocomplete="off">
+                         
+                        <div class="form-group"><label class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+                                <input name="name" value class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Email</label>
+                            <div class="col-sm-10">
+                                <input name="email" value class="form-control" readonly>
+                            </div>
+                        </div>                                        
+
+                        <div class="hr-line-dashed"></div>
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" name="password" value class="form-control">
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label">Confirm Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" name="confirm_password" value class="form-control">
+                            </div>
+
+                        </div>
+
+                        <div class="hr-line-dashed"></div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <a class="btn btn-white" href="/user"><i class="fa fa-close"></i> Cancel</a>
+                                <button class="user-create btn btn-primary" type="submit"><i class="fa fa-check"></i> Save changes</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>       
+            </div>
+        </div>
+    </div>
+</div>
 
 @include('site.includes.footer')
 </div>
