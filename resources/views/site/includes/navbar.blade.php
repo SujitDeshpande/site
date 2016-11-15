@@ -41,7 +41,7 @@
                             </ul>
                     </div>
                     <div class="logo-element">
-                        <img alt="image" class="img-circle" src="/uploads/avatars/{{Auth::user()->avatar}}" width="10%" height="10%" />
+                        <img alt="image" class="img-circle" src="/uploads/avatars/{{Auth::user()->avatar}}" width="60%" height="60%" />
                     </div>
                 </li>
                 @if ( Request::is('home'))
