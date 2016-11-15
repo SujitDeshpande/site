@@ -54,9 +54,10 @@
 
 
                         <img src="/uploads/avatars/{{Auth::user()->avatar}}" alt="image" class="img-circle" width="20%" height="20%">
-
+                        <p>&nbsp;</p>
                         <input type="file" name="avatar">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
+
                         
                         <div class="hr-line-dashed"></div>
 
