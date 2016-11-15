@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->foreign('status')->references('id')->on('user_status');
             $table->integer('group_id')->unsigned();
             $table->foreign('group_id')->references('id')->on('user_groups');
+            $table->string('avatar')->default('default-avatar.jpg');
             $table->rememberToken();
             $table->timestamps();
         });

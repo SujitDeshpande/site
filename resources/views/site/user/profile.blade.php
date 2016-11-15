@@ -54,6 +54,10 @@
 
 
                         <img src="/uploads/avatars/default.jpg" alt="image" class="img-circle" width="20%" height="20%">
+
+                        <form enctype="multipart/form-data" action="/profile" method="POST"></form>
+                        <input type="file" name="avatar">
+                        <input type="hidden" name="_token" value="{{csrf_token()}}">
                         
                         <div class="hr-line-dashed"></div>
 

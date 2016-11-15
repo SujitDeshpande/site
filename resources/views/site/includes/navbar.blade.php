@@ -21,7 +21,7 @@
                              </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li>
-                                <a href="{{ URL::action('UserAdminController@show', Auth::user()->id) }}">
+                                <a href="{{ URL::action('UserAdminController@show') }}">
                                     Profile
                                 </a>
                                 </li>
