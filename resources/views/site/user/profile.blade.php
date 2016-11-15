@@ -52,12 +52,21 @@
 
                     <form enctype="multipart/form-data" action="/profile" method="POST" class="form-horizontal" autocomplete="off">
 
-                        
+
                         <center>
-                        
+
                         <img src="/uploads/avatars/{{Auth::user()->avatar}}" alt="image" class="img-circle" width="20%" height="20%">
                         <p>&nbsp;</p>
-                        <input type="file" name="avatar">
+
+                        <div class="input-group col-lg-6 col-sm-6 col-12">
+                            <label class="input-group-btn">
+                                <span class="btn btn-primary">
+                                    Browse <input type="file" style="display: none; width:50%" name="avatar">
+                                </span>
+                            </label>
+                            <input type="text" class="form-control" readonly>
+                        </div>
+
                         <input type="hidden" name="_token" value="{{csrf_token()}}"></center>
 
                         
@@ -124,6 +133,35 @@
     $(".chosen").chosen({
         width:'50%'
     });
+
+
+$(function() {
+
+  // We can attach the `fileselect` event to all file inputs on the page
+  $(document).on('change', ':file', function() {
+    var input = $(this),
+        numFiles = input.get(0).files ? input.get(0).files.length : 1,
+        label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+    input.trigger('fileselect', [numFiles, label]);
+  });
+
+  // We can watch for our custom `fileselect` event like this
+  $(document).ready( function() {
+      $(':file').on('fileselect', function(event, numFiles, label) {
+
+          var input = $(this).parents('.input-group').find(':text'),
+              log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+          if( input.length ) {
+              input.val(log);
+          } else {
+              if( log ) alert(log);
+          }
+
+      });
+  });
+  
+});
 
 </script>
 
