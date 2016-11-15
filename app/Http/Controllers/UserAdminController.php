@@ -82,4 +82,17 @@ class UserAdminController extends Controller
         return ($user);
     }
 
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function profile($id)
+    {
+        $users = User::getAdminUsers();
+
+        return view('site.user.profile')->with('users', $users);
+    }    
+
 }

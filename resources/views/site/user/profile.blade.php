@@ -61,23 +61,9 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Email</label>
                             <div class="col-sm-10">
-                                <input name="email" value class="form-control">
+                                <input name="email" value class="form-control" readonly>
                             </div>
                         </div>                                        
-
-                        
-
-                        <div class="form-group"><label class="col-sm-2 control-label">Group</label>
-                            <div class="col-sm-10">
-                                {!! Form::select('group', $groups , null, ['class'=>'form-control', 'id'=>'select-group']) !!}
-                            </div>
-                        </div>
-
-                        <div class="form-group"><label class="col-sm-2 control-label">Group</label>
-                            <div class="col-sm-10">
-                                {!! Form::select('status', $status , null, ['class'=>'form-control', 'id'=>'status-group']) !!}
-                            </div>
-                        </div>
 
                         <div class="hr-line-dashed"></div>
                         <div class="form-group">
@@ -129,7 +115,7 @@
     });
 
 </script>
-<script type="text/javascript" src="js/custom/user/addUser.js"></script>
+
 
 </body>
 
