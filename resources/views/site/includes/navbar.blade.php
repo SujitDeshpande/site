@@ -18,7 +18,7 @@
                              </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
                                 <li>
-                                <a href="/user/1">
+                                <a href="/profile">
                                     Profile
                                 </a>
                                 </li>
