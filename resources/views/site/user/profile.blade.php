@@ -53,7 +53,7 @@
                     <form method="get" class="form-horizontal" autocomplete="off">
 
 
-                        <img src="/uploads/avatars/default.jpg" alt="image" class="img-circle" width="10%" height="10%">
+                        <img src="/uploads/avatars/default.jpg" alt="image" class="img-circle" width="20%" height="20%">
                         
                         <div class="hr-line-dashed"></div>
 
