@@ -41,7 +41,8 @@
                             </ul>
                     </div>
                     <div class="logo-element">
-                        <img alt="image" class="img-circle" src="/uploads/avatars/{{Auth::user()->avatar}}" width="60%" height="60%" />
+                    <a href="{{ URL::action('UserAdminController@show') }}">
+                        <img alt="image" class="img-circle" src="/uploads/avatars/{{Auth::user()->avatar}}" width="60%" height="60%" /></a>
                     </div>
                 </li>
                 @if ( Request::is('home'))
