@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Models\UserGroup;
 use App\Models\UserStatus;
+use Image;
 
 class UserAdminController extends Controller
 {
