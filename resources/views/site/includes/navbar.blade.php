@@ -3,8 +3,8 @@
             <ul class="nav metismenu" id="side-menu">
                 <li class="nav-header">
                     <div class="dropdown profile-element">
-                            <img alt="image" class="img-circle" src="/uploads/avatars/default.jpg" width="25%" height="25%" />
-                                     </span>
+                            <img alt="image" class="img-circle" src="/uploads/avatars/default.jpg" width="30%" height="30%" />
+                            </span>
 
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">{{ Auth::user()->name }}</strong>
