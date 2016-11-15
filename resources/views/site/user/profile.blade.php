@@ -50,12 +50,11 @@
                 </div>  
                 <div class="ibox-content">
 
-                    <form method="get" class="form-horizontal" autocomplete="off">
+                    <form enctype="multipart/form-data" action="/profile" method="POST" class="form-horizontal" autocomplete="off">
 
 
                         <img src="/uploads/avatars/default.jpg" alt="image" class="img-circle" width="20%" height="20%">
 
-                        <form enctype="multipart/form-data" action="/profile" method="POST"></form>
                         <input type="file" name="avatar">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         
