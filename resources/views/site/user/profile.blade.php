@@ -50,7 +50,7 @@
                 </div>  
                 <div class="ibox-content">
 
-                    <form enctype="multipart/form-data" method="POST" class="form-horizontal" autocomplete="off">
+                    <form enctype="multipart/form-data" method="get" class="form-horizontal" autocomplete="off">
 
 
                         <center>
