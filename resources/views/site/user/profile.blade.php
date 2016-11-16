@@ -108,7 +108,7 @@
                         <div class="form-group">
                             <div class="col-sm-4 col-sm-offset-2">
                                 <a class="btn btn-white" href="/home"><i class="fa fa-close"></i> Cancel</a>
-                                <button class="user-update btn btn-primary" type="submit"><i class="fa fa-check"></i> Save</button>
+                                <button class="profile-update btn btn-primary" type="submit"><i class="fa fa-check"></i> Save</button>
 
                             </div>
                         </div>
@@ -165,6 +165,7 @@ $(function() {
 
 </script>
 
+<script type="text/javascript" src="js/custom/user/modifyProfile.js"></script>
 
 </body>
 

@@ -91,5 +91,21 @@ class User extends Authenticatable
 
         return $user;
 
+    }  
+
+    public static function updateUserProfile($request)
+    {
+        $user = User::find($request['id']);
+
+        $user['name']       = $request['name'];
+
+        if(isset($request['password']) && $request['password'] != ''){
+            $user['password'] = \Hash::make($request['password']);
+        }
+        
+        $user->save();        
+
+        return $user;
+
     }    
 }
