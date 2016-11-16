@@ -50,7 +50,7 @@
                 </div>  
                 <div class="ibox-content">
 
-                    <form enctype="multipart/form-data" action="/profile" method="POST" class="form-horizontal" autocomplete="off">
+                    <form enctype="multipart/form-data" method="POST" class="form-horizontal" autocomplete="off">
 
 
                         <center>
@@ -89,7 +89,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Password</label>
                             <div class="col-sm-10">
-                                <input type="password" name="password" value class="form-control">
+                                <input type="password" name="password" id="password" value class="form-control">
                             </div>
 
                         </div>
@@ -97,7 +97,7 @@
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Confirm Password</label>
                             <div class="col-sm-10">
-                                <input type="password" name="confirm_password" value class="form-control">
+                                <input type="password" name="confirm_password" id="confirm_password" value class="form-control">
                             </div>
 
                         </div>
