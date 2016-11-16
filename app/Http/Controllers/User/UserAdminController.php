@@ -109,7 +109,7 @@ class UserAdminController extends Controller
             $user->save();
         }
 
-        $user = User::updateUserProfile($request);
+        $user1 = User::updateUserProfile($request);
         $users = User::getAdminUsers();
         return view('site.user.profile')->with('users', $users);
     } 
