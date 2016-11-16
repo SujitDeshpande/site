@@ -112,6 +112,10 @@ class UserAdminController extends Controller
 
         $user['name']       = $request['name'];
 
+        if($request['password'] != $request['confirm_password'] !=){
+            swal("Error", "Passwords do not match.", "error"); 
+        }
+
         if(isset($request['password']) && $request['password'] != ''){
             $user['password'] = \Hash::make($request['password']);
         }
