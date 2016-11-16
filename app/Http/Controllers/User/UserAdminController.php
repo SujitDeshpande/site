@@ -106,10 +106,17 @@ class UserAdminController extends Controller
 
             $user = Auth::user();
             $user->avatar = $filename;
-            $user->save();
+            //$user->save();
         }
 
-        $user1 = User::updateUserProfile($request);
+        $user['name']       = $request['name'];
+
+        if(isset($request['password']) && $request['password'] != ''){
+            $user['password'] = \Hash::make($request['password']);
+        }
+        
+        $user->save();   
+
         $users = User::getAdminUsers();
         return view('site.user.profile')->with('users', $users);
     } 
