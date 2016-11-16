@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$(".profile-update").click(function(){
 
-		var id = $Auth::user()->id;
+		var user_id = $Auth::user()->id;
 		var name = $('input[name="name"]').val();
 
 		var password = $('input[name="password"]').val();
@@ -29,6 +29,7 @@ $(document).ready(function(){
 			    contentType: "application/json",
 		        dataType: "json",
 		        data: JSON.stringify({
+		        	id: user_id,
 		            name: $('input[name="name"]').val(),
 		            password: $('input[name="mpassword"]').val()
 		        }),
