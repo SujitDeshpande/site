@@ -31,7 +31,7 @@ $(document).ready(function(){
 		        data: JSON.stringify({
 		        	id: user_id,
 		            name: $('input[name="name"]').val(),
-		            password: $('input[name="mpassword"]').val()
+		            password: $('input[name="password"]').val()
 		        }),
 			    success: function(result) {
 			        
