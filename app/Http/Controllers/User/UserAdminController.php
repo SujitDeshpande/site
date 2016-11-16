@@ -113,7 +113,7 @@ class UserAdminController extends Controller
         $user['name']       = $request['name'];
 
         if($request['password'] != $request['confirm_password']){
-            swal("Error", "Passwords do not match.", "error"); 
+            Session::flash('Error', 'Passwords do not Match!');
         }
 
         if(isset($request['password']) && $request['password'] != ''){
