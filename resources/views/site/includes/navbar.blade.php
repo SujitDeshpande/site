@@ -59,13 +59,15 @@
                 @endif
                     <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
                 </li>
+                @if (Auth::user()->group_id == 1)
                 @if ( Request::is('user'))
                 <li class="active">
                 @else
                 <li>
                 @endif
                     <a href="/user"><i class="fa fa-users"></i> <span class="nav-label">Users</span> </a>
-                </li>                
+                </li>   
+                @endif             
             </ul>
 
         </div>
