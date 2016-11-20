@@ -67,6 +67,13 @@
                 @endif
                     <a href="/user"><i class="fa fa-users"></i> <span class="nav-label">Users</span> </a>
                 </li>   
+                @if ( Request::is('role'))
+                <li class="active">
+                @else
+                <li>
+                @endif
+                    <a href="/role"><i class="fa fa-users"></i> <span class="nav-label">Roles</span> </a>
+                </li> 
                 @endif             
             </ul>
 

@@ -37,6 +37,22 @@ class UserAdminController extends Controller
                                       ->with('status', $status)
                                       ->with('groups', $groups);
     }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function role_index()
+    {
+        
+        $users = User::getAdminUsers();
+        $groups = UserGroup::get();
+
+        return view('site.role.index')->with('users', $users)
+                                      ->with('groups', $groups);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -48,7 +64,9 @@ class UserAdminController extends Controller
         $groups = UserGroup::pluck('name', 'id');
         $status = UserStatus::pluck('name', 'id');
 
-        return view('site.user.create')->with('status', $status)->with('users', $users)->with('groups', $groups);
+        return view('site.user.create')->with('status', $status)
+                                       ->with('users', $users)
+                                       ->with('groups', $groups);
     }
     /**
      * Store a newly created resource in storage.
