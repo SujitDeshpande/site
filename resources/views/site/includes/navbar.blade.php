@@ -60,20 +60,30 @@
                     <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
                 </li>
                 @if (Auth::user()->group_id == 1)
-                @if ( Request::is('user'))
-                <li class="active">
-                @else
-                <li>
-                @endif
-                    <a href="/user"><i class="fa fa-users"></i> <span class="nav-label">Users</span> </a>
-                </li>   
-                @if ( Request::is('role'))
-                <li class="active">
-                @else
-                <li>
-                @endif
-                    <a href="/role"><i class="fa fa-users"></i> <span class="nav-label">Roles</span> </a>
-                </li> 
+                    @if ( Request::is('user') OR Request::is('role'))
+                    <li class="active">
+                    @else
+                    <li>
+                    @endif
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Manage</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+
+                            @if ( Request::is('user'))
+                            <li class="active">
+                            @else
+                            <li>
+                            @endif
+                                <a href="/user"><i class="fa fa-users"></i> <span class="nav-label">Users</span> </a>
+                            </li>   
+                            @if ( Request::is('role'))
+                            <li class="active">
+                            @else
+                            <li>
+                            @endif
+                                <a href="/role"><i class="fa fa-users"></i> <span class="nav-label">Roles</span> </a>
+                            </li> 
+                        </ul>
+                </li>
                 @endif             
             </ul>
 
