@@ -80,7 +80,7 @@
                             @else
                             <li>
                             @endif
-                                <a href="/role"><i class="fa fa-users"></i> <span class="nav-label">Roles</span> </a>
+                                <a href="/role"><i class="fa fa-graduation-cap"></i> <span class="nav-label">Roles</span> </a>
                             </li> 
                         </ul>
                 </li>
