@@ -23,7 +23,7 @@ Route::get('/calendar', 'CalendarController@index');
 
 Route::get('/profile', 'UserAdminController@show');
 Route::post('/profile', 'UserAdminController@update_avatar');
-Route::get('/role', 'UserAdminController@role_index');
+
 
 //Admin Routes - Accessible to users with Admin Role
 Route::group(['middleware' => 'App\Http\Middleware\CheckRole'], function(){
@@ -33,5 +33,5 @@ Route::group(['middleware' => 'App\Http\Middleware\CheckRole'], function(){
 	Route::delete('/user/{id}', 'UserAdminController@destroy');
 	Route::post('/user/{id}', 'UserAdminController@update');
 
-
+	Route::get('/role', 'UserAdminController@role_index');
 });
