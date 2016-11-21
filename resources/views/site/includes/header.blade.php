@@ -17,7 +17,7 @@
                             <li>
                                 <a href="mailbox.html">
                                     <div>
-                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <i class="fa fa-users fa-fw"></i> You have 8 new users
                                         <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
