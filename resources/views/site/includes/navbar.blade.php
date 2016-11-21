@@ -64,7 +64,7 @@
                 @else
                 <li>
                 @endif
-                    <a href="forums"><i class="fa fa-comments"></i> <span class="nav-label">Discussions</span> </a>
+                    <a href="/forums"><i class="fa fa-comments"></i> <span class="nav-label">Discussions</span> </a>
                 </li>
                 @if (Auth::user()->group_id == 1)
                     @if ( Request::is('user') OR Request::is('role'))
