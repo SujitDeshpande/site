@@ -168,6 +168,7 @@ return [
          */
         Collective\Html\HtmlServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        DevDojo\Chatter\ChatterServiceProvider::class,
         //
 
         /*
