@@ -8,8 +8,10 @@
                         </div>
                     </form>
                 </div>
-                <?php $count=0 ?>
+
                 <ul class="nav navbar-top-links navbar-right">
+                @if (Auth::user()->group_id == 1)
+                    <?php $count=0 ?>
                     @foreach($users as $user)
                         @if ( $user->status > 1)
                             <?php $count++; ?> 
@@ -21,16 +23,16 @@
                         </a>
                         <ul class="dropdown-menu dropdown-alerts">
                             <li>
-                                <a href="mailbox.html">
+                                <a href="user">
                                     <div>
                                         <i class="fa fa-users fa-fw"></i> You have {{$count}} new users
-                                        <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
                             </li>
                         </ul>
 
                     </li>
+                @endif
                     <li>
                         <a href="{{ url('/logout') }}"
                                     onclick="event.preventDefault();
