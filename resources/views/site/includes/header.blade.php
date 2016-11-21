@@ -9,15 +9,20 @@
                     </form>
                 </div>
                 <ul class="nav navbar-top-links navbar-right">
+                    @foreach($users as $user)
+                        @if ( $user->status > 1)
+                            <?php $count++; ?> 
+                        @endif
+                    @endforeach                
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">{{$count}}</span>
                         </a>
                         <ul class="dropdown-menu dropdown-alerts">
                             <li>
                                 <a href="mailbox.html">
                                     <div>
-                                        <i class="fa fa-users fa-fw"></i> You have 8 new users
+                                        <i class="fa fa-users fa-fw"></i> You have {{$count}} new users
                                         <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
