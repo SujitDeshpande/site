@@ -52,7 +52,7 @@ return [
     */
     
     'headline' => 'Team Discussions',
-    'description' => 'A simple forum package for your Laravel app.',
+    'description' => 'A forum to document the Shift Handoff',
 
     /*
     |--------------------------------------------------------------------------
