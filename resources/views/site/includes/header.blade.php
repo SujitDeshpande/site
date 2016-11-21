@@ -8,6 +8,7 @@
                         </div>
                     </form>
                 </div>
+                <?php $count=0 ?>
                 <ul class="nav navbar-top-links navbar-right">
                     @foreach($users as $user)
                         @if ( $user->status > 1)
