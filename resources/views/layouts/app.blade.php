@@ -16,6 +16,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel='stylesheet' />
 
     
     @yield('css')
