@@ -17,7 +17,7 @@
         ]); ?>
     </script>
     <link href="{{ asset('css/bootstrap.min.css') }}" rel='stylesheet' />
-
+    <link href="{{ asset('font-awesome/css/font-awesome.css') }}" rel='stylesheet' />
     
     @yield('css')
     <link href="{{ asset('css/animate.css') }}" rel='stylesheet' />
