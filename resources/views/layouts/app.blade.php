@@ -29,7 +29,7 @@
 
     @include('site.includes.navbar')
 
-    <div id="page-wrapper" class="gray-bg">
+    <div id="page-wrapper" class="white-bg">
         @include('site.includes.header')
          <div class="wrapper wrapper-content animated fadeInRight">
 
