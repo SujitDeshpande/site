@@ -186,6 +186,11 @@
 									<td>{{ $incs->name }} </td>
 									<td>{{  $date }} </td>
 									<td>{{ $incs->incident_no }} </td>
+                                    @if ( $incs->status == "Complete")
+                                    <span class="label label-primary">{{ $incs->status }}</span>
+                                    @elseif ( $incs->status == "WIP")
+                                    <span class="label label-warning">{{ $incs->status }}</span>
+                                    @endif
 									<td>{{ $incs->status }}</td>
 									<td>{{ $incs->category }}</td>
 									<td>{{ $incs->stream }}</td>
