@@ -355,6 +355,7 @@
                 dom: '<"html5buttons"B>lTfgitp',
                 buttons: [
                     {extend: 'csv'},
+                    {extend: 'pdf', title: 'ExampleFile'},
                     {extend: 'excel', title: 'ExampleFile'}
                 ]
 
