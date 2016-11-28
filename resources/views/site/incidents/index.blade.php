@@ -45,7 +45,7 @@
 						<button type="button" class="btn btn-primary btn" data-toggle="modal" data-target="#createModal"><i class="fa fa-plus"></i> Insert Record
                                         </button>
 							<?php 
-								$date = date('Y-m-d');
+								$date = date('d F, Y');
 								?>
 										<div class="modal inmodal" id="createModal" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -70,7 +70,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Date</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="date" id="date" value="{{$date}}" class="form-control" disabled>
+                                                                        <input name="date" id="date" value="{{$date('d F, Y')}}" class="form-control" disabled>
                                                                     </div>
                                                                 </div> 
 																<p>&nbsp;</p>
@@ -220,7 +220,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Date</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="date" id="date" value="{{$date}}" class="form-control" disabled>
+                                                                        <input name="date" id="date" value="{{date('d F, Y')}}" class="form-control" disabled>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
