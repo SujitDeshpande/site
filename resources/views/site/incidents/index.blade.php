@@ -142,7 +142,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Comments</label>
                                                                     <div class="col-sm-10">
-																		<pre><textarea class="form-control" rows="5" name="comments" id="comments" required="true"></textarea></pre>
+																		<textarea class="form-control" rows="5" name="comments" id="comments" required="true"></textarea>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
@@ -289,7 +289,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Comments</label>
                                                                     <div class="col-sm-10">
-																		<pre><textarea class="form-control" rows="5" name="comments" id="select-comments" required="true"></textarea></pre>
+																		<textarea class="form-control" rows="5" name="comments" id="select-comments" required="true"></textarea>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
