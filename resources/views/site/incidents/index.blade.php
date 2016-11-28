@@ -198,7 +198,7 @@
                                     <td>{{ $incs->comments }}</td>
 
 									<td>
-										@if($logged_user_id == $incs->user_id)
+										@if($logged_user_id == $incs->user_id OR Auth::user()->group_id == 1)
                                         <button data-incident="{{ $incs->id }}" type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" data-bid="{{$incs->id}},{{$incs->incident_no}},{{$incs->status}},{{$incs->category}},{{$incs->stream}},{{$incs->comments}}"><i class="fa fa-edit"></i>
                                         </button>
 										<a data-incident="{{ $incs->id }}" id="incident{{ $incs->id }}" class="delete-incident btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
