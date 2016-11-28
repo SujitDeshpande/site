@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
-use App\Models\Incident;
+use App\Incident;
 use Image;
 use Auth;
 use Session;
