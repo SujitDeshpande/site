@@ -5,7 +5,8 @@
 <script src="{{ asset('js/plugins/metisMenu/jquery.metisMenu.js') }}"> </script>
 <script src="{{ asset('js/plugins/slimscroll/jquery.slimscroll.min.js') }}"> </script>
 <script src="{{ asset('js/plugins/jeditable/jquery.jeditable.js') }}"> </script>
-<script src="{{ asset('js/plugins/dataTables/datatables.min.js') }}"> </script>
+<script src="{{ asset('https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js') }}"> </script>
+<script src="{{ asset('https://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js') }}"> </script>
 <!-- Custom and plugin javascript -->
 <script src="{{ asset('js/inspinia.js') }}"> </script>
 <script src="{{ asset('js/plugins/pace/pace.min.js') }}"> </script>
