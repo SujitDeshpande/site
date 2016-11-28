@@ -64,7 +64,7 @@
                 @else
                 <li>
                 @endif
-                    <a href="/incidents"><i class="fa fa-calendar"></i> <span class="nav-label">Incidents</span> </a>
+                    <a href="/incidents"><i class="fa fa-stack-exchange"></i> <span class="nav-label">Incidents</span> </a>
                 </li>
                 @if ( Request::is('forums'))
                 <li class="active">
