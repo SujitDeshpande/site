@@ -363,7 +363,7 @@
             {
                 extend: 'excelHtml5',
                 text: 'Export to Excel',
-                title: 'Extraxt',
+                title: 'Extract',
                  
                  download: 'open',
                  orientation:'landscape',
