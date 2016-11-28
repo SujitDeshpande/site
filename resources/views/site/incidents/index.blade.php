@@ -142,7 +142,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Comments</label>
                                                                     <div class="col-sm-10">
-																		<textarea class="form-control" rows="5" name="comments" id="comments" required="true"></textarea>
+																		<pre><textarea class="form-control" rows="5" name="comments" id="comments" required="true"></textarea></pre>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
@@ -195,7 +195,7 @@
                                     </td>
 									<td>{{ $incs->category }}</td>
 									<td>{{ $incs->stream }}</td>
-                                    <td>{{ $incs->comments }}</td>
+                                    <td><pre>{{ $incs->comments }}</pre></td>
 
 									<td>
 										@if($logged_user_id == $incs->user_id OR Auth::user()->group_id == 1)
@@ -289,7 +289,7 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Comments</label>
                                                                     <div class="col-sm-10">
-																		<textarea class="form-control" rows="5" name="comments" id="select-comments" required="true"></textarea>
+																		<pre><textarea class="form-control" rows="5" name="comments" id="select-comments" required="true"></textarea></pre>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
