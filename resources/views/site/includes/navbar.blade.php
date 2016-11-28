@@ -59,6 +59,13 @@
                 @endif
                     <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
                 </li>
+                @if ( Request::is('incidents'))
+                <li class="active">
+                @else
+                <li>
+                @endif
+                    <a href="/incidents"><i class="fa fa-calendar"></i> <span class="nav-label">Incidents</span> </a>
+                </li>
                 @if ( Request::is('forums'))
                 <li class="active">
                 @else

@@ -24,6 +24,12 @@ Route::get('/calendar', 'CalendarController@index');
 Route::get('/profile', 'UserAdminController@show');
 Route::post('/profile', 'UserAdminController@update_avatar');
 
+//Incidents routing
+Route::get('/incidents', 'IncidentsController@index');
+Route::get('/incidents/create', 'IncidentsController@create');
+Route::post('/incidents', 'IncidentsController@store');
+Route::post('/incidents/{id}', 'IncidentsController@update');
+Route::delete('/incidents/{id}', 'IncidentsController@destroy');
 
 //Admin Routes - Accessible to users with Admin Role
 Route::group(['middleware' => 'App\Http\Middleware\CheckRole'], function(){
