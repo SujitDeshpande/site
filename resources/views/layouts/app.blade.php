@@ -33,14 +33,15 @@
         @include('site.includes.header')
          <div class="wrapper wrapper-content animated fadeInRight">
 
-                        @yield('content')
+            @yield('content')
 
         </div>
         
 
     </div>
+    @include('site.includes.footer')
 </div>
-@include('site.includes.footer')
+
 
 </body>    
     <!-- Scripts -->
