@@ -358,10 +358,19 @@
 		});    
         $(document).ready(function () {
             $('.dataTable').DataTable({
-                dom: '<"html5buttons"B>lTfgitp',
-                buttons: [
-                    {extend: 'excel',  title: 'Incidents', text: 'Export to Excel'}
-                ]
+                dom: 'lBfrtip',
+            buttons: [
+            {
+                extend: 'excelHtml5',
+                text: 'Export to Excel',
+                title: 'Extraxt',
+                 
+                 download: 'open',
+                 orientation:'landscape',
+                  exportOptions: {
+                  columns: ':visible'
+                }
+            }]
 
             });
 
