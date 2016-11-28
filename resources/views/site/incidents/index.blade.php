@@ -354,7 +354,9 @@
 		});    
         $(document).ready(function () {
             //$('#dataTable').DataTable()
-			var table = $('#dataTable').DataTable( {
+            $('.dataTable').DataTable({
+			//var table = $('#dataTable').DataTable( {
+                dom: '<"html5buttons"B>lTfgitp',
 			buttons: [
 				{
 					extend: 'excel',
