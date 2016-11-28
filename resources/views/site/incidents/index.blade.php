@@ -195,7 +195,7 @@
                                     </td>
 									<td>{{ $incs->category }}</td>
 									<td>{{ $incs->stream }}</td>
-                                    <pre><td>{{ $incs->comments }}</td></pre>
+                                    <td>{{ nl2br($incs->comments) }}</td>
 
 									<td>
 										@if($logged_user_id == $incs->user_id OR Auth::user()->group_id == 1)
