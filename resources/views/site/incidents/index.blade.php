@@ -191,7 +191,7 @@
 									<td>{{ $incs->status }}</td>
 									<td>{{ $incs->category }}</td>
 									<td>{{ $incs->stream }}</td>
-                                    <td>{{ wordwrap($incs->comments) }}</td>
+                                    <td>{{ $incs->comments }}</td>
 
 									<td>
 										@if($logged_user_id == $incs->user_id)
