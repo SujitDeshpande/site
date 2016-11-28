@@ -161,7 +161,7 @@
 	            </div>  
 	            <div class="ibox-content">
 	            	<div class="table-responsive">
-						<table class="table table-striped table-bordered table-hover dataTable" id="dataTable">
+						<table class="table table-striped table-bordered table-hover dataTable">
 							<thead>
 								<tr>
 									<td>Sr No</td>
@@ -352,8 +352,8 @@
 		});    
         $(document).ready(function () {
             //$('#dataTable').DataTable()
-            //$('.dataTable').DataTable({
-			var table = $('#dataTable').DataTable( {
+            $('.dataTable').DataTable({
+			//var table = $('#dataTable').DataTable( {
                 dom: '<"html5buttons"B>lTfgitp',
 			buttons: [
 				{
@@ -363,9 +363,7 @@
 				}
 			]
 		} );
-  
-		table.buttons().container()
-		.appendTo( $('.col-sm-6:eq(0)', table.table().container() ) );
+
         });
 
     </script>
