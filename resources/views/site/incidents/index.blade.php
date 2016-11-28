@@ -195,7 +195,7 @@
                                     </td>
 									<td>{{ $incs->category }}</td>
 									<td>{{ $incs->stream }}</td>
-                                    <td><pre>{{ $incs->comments }}</pre></td>
+                                    <pre><td>{{ $incs->comments }}</td></pre>
 
 									<td>
 										@if($logged_user_id == $incs->user_id OR Auth::user()->group_id == 1)
