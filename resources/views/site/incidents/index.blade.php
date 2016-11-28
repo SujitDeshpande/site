@@ -358,7 +358,7 @@
 		});    
         $(document).ready(function () {
             $('.dataTable').DataTable({
-                dom: 'Bfrtip',
+                dom: '<"html5buttons"B>lTfgitp',
                 buttons: [
                     {extend: 'excel',  title: 'Incidents', text: 'Export to Excel'}
                 ]
