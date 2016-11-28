@@ -14,7 +14,7 @@
                     @endforeach                
                     <li class="dropdown">
                         <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
-                            @if (count == 0)
+                            @if ($count == 0)
                             <i class="fa fa-bell"></i>  <span class="label label-warning"></span>
                             else
                             <i class="fa fa-bell"></i>  <span class="label label-warning">{{$count}}</span>
