@@ -64,14 +64,14 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="mname" id="mname" value="{{$name}}" class="form-control">
+                                                                        <input name="mname" id="mname" value="{{$name}}" class="form-control" disabled>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Date</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="date" id="date" value="{{$date}}" class="form-control">
+                                                                        <input name="date" id="date" value="{{$date}}" class="form-control" disabled>
                                                                     </div>
                                                                 </div> 
 																<p>&nbsp;</p>
@@ -215,14 +215,14 @@
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Name</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="mname" id="mname" value="{{$name}}" class="form-control">
+                                                                        <input name="mname" id="mname" value="{{$name}}" class="form-control" disabled>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Date</label>
                                                                     <div class="col-sm-10">
-                                                                        <input name="date" id="date" value="{{$date}}" class="form-control">
+                                                                        <input name="date" id="date" value="{{$date}}" class="form-control" disabled>
                                                                     </div>
                                                                 </div>
                                                                 <p>&nbsp;</p>
