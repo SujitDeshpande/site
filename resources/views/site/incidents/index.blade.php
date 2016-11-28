@@ -357,11 +357,11 @@
 	        }
 		});    
         $(document).ready(function () {
-            $('#dataTable').DataTable({
-                dom: 'Bfrtip',
+            $('.dataTable').DataTable({
+                dom: '<"html5buttons"B>lTfgitp',
                 buttons: [
-            'excel'
-        ]
+                    {extend: 'excel',  title: 'Incidents', text: 'Export to Excel'}
+                ]
 
             });
 
