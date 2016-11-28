@@ -360,7 +360,7 @@
             $('.dataTable').DataTable({
                 dom: '<"html5buttons"B>lTfgitp',
                 buttons: [
-                    {extend: 'csv',  title: 'Incidents', text: 'Export to Excel'}
+                    {extend: 'excel',  title: 'Incidents', text: 'Export to Excel'}
                 ]
 
             });
