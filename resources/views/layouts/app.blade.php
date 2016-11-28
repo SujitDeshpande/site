@@ -36,13 +36,13 @@
                         @yield('content')
 
         </div>
-
+        
 
     </div>
 </div>
+@include('site.includes.footer')
 
-
-    
+</body>    
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"> </script>
 
@@ -54,5 +54,5 @@
 <script src="{{ asset('js/inspinia.js') }}"> </script>
 <script src="{{ asset('js/plugins/pace/pace.min.js') }}"> </script>
 @yield('js')
-</body>
+
 </html>
