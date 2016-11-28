@@ -8,7 +8,7 @@ use Auth;
 use DB;
 use App\Quotation;
 
-class incident extends Model
+class Incident extends Model
 {
 	protected $table = 'incidents';
 	protected $fillable = ['incident_no', 'status', 'category','stream','user_id', 'comments', 'created_at', 'updated_at'];
