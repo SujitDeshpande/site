@@ -184,7 +184,7 @@
 								<tr>
 									<td>{{ $i }} </td>
 									<td>{{ $incs->name }} </td>
-									<td>{{  $date('d F, Y') }} </td>
+									<td>{{  $date }} </td>
 									<td>{{ $incs->incident_no }} </td>
 									<td>{{ $incs->status }}</td>
 									<td>{{ $incs->category }}</td>
