@@ -47,7 +47,6 @@
 							<?php 
 								$date = date('Y-m-d');
 								?>
-							<!---- Create Incident Modal ---->
 										<div class="modal inmodal" id="createModal" tabindex="-1" role="dialog" aria-hidden="true">
                                                 <div class="modal-dialog">
                                                     <div class="modal-content animated bounceInRight">
@@ -157,13 +156,12 @@
                                                 </div>
                                         </div>
 										
-										<!----Ends Here--------------------->
+
 					</div> 
 	            </div>  
 	            <div class="ibox-content">
 	            	<div class="table-responsive">
-						<table class="table table-striped table-bordered table-hover" id="dataTable">
-						<!--<button type="button" id="export-excel" class="btn btn-info btn-sm"><i class="fa fa-file-excel-o" aria-hidden="true"></i></button>-->
+						<table class="table table-striped table-bordered table-hover dataTable" id="dataTable">
 							<thead>
 								<tr>
 									<td>Sr No</td>
