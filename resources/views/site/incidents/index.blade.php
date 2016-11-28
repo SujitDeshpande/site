@@ -351,18 +351,14 @@
 	        }
 		});    
         $(document).ready(function () {
-            //$('#dataTable').DataTable()
             $('.dataTable').DataTable({
-			//var table = $('#dataTable').DataTable( {
                 dom: '<"html5buttons"B>lTfgitp',
-			buttons: [
-				{
-					extend: 'excel',
-					text: 'Export to Excel',
-					title: 'Incidents_list'
-				}
-			]
-		} );
+                buttons: [
+                    {extend: 'excel', title: 'ExampleFile'}
+                ]
+
+            });
+
 
         });
 
