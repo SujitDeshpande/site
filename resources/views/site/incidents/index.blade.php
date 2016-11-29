@@ -165,8 +165,8 @@
 							<thead>
 								<tr>
 									<td>Sr No</td>
-									<td>Name</td>
-									<td>Date</td>
+									<td>Worked By</td>
+									<td>Created Date</td>
 									<td>Incident Number</td>
                                     <td>Status</td>
                                     <td>Category</td>
