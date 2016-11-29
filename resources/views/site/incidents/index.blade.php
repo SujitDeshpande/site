@@ -184,7 +184,7 @@
 								<tr>
 									<td>{{ $i }} </td>
 									<td>{{ $incs->name }} </td>
-									<td>{{  $date }} </td>
+									<td>{{ $incs->created_at }} </td>
 									<td>{{ $incs->incident_no }} </td>
                                     <td>
                                     @if ( $incs->status == "Complete")
