@@ -185,7 +185,7 @@
 									<td>{{ $i }} </td>
 									<td>{{ $incs->name }} </td>
 									<td>{{ $incs->created_at }} </td>
-									<td>{{ $incs->incident_no }} </td>
+									<td>{{ date('j-M-y', strtotime($incs->incident_no)) }} </td>
                                     <td>
                                     @if ( $incs->status == "Complete")
                                     <span class="label label-primary">{{ $incs->status }}</span>
