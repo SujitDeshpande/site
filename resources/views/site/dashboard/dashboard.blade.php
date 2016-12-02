@@ -24,6 +24,8 @@
          <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 @if($group_id == 1)
+<div class="col-md-4">
+                    <div class="ibox float-e-margins">
 
                         <div>
                             <div class="ibox-content no-padding border-left-right">
@@ -40,7 +42,7 @@
                                 </div>
                             </div>
                     </div>
-
+</div></div>
 
                 <div class="col-lg-4">
                     <div class="ibox-content text-center">
