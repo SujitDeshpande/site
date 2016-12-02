@@ -33,7 +33,7 @@
 
                         <div>
                             <div class="ibox-content no-padding border-left-right">
-                                <img alt="image" class="img-responsive" src="img/profile_big.jpg">
+                                <img alt="image" class="img-responsive" src="img/users.jpg">
 
                             </div>
                             <div class="ibox-content profile-content">
@@ -50,30 +50,6 @@
                             </div>
                     </div>
                 </div></div>
-
-                <div class="col-lg-4">
-                    <div class="ibox-content text-center">
-
-                            <div class="m-b-md">
-                            <h2 class="font-bold no-margins">
-                                
-                            </h2>
-                                <small></small>
-                            </div>
-                            <!--<img src="img/a4.jpg" class="img-circle circle-border m-b-md" alt="profile">-->
-                            <i class="fa fa-users fa-5x"></i>
-                            <div>
-                                <span>{{$user_count}} Users</span> 
-                            </div>
-                        </div>
-                        <div class="widget-text-box">
-                            <h4 class="media-heading"></h4>
-                            <p class="text-center">Users Content</p>
-                            <div class="text-center">
-                                <a href="/user"><button type="button" class="btn btn-primary btn">View All Users </button></a>
-                            </div>
-                        </div>
-                </div>
                 @endif
                 
                 <div class="col-lg-4">
