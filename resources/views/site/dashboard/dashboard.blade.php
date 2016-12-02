@@ -25,7 +25,8 @@
             <div class="row">
                 @if($group_id == 1)
                 <div class="col-lg-4">
-                    <div class="widget-head-color-box navy-bg p-lg text-center">
+                    <div class="ibox-content text-center">
+
                             <div class="m-b-md">
                             <h2 class="font-bold no-margins">
                                 
