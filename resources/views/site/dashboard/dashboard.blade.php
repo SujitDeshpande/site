@@ -49,51 +49,65 @@
                                 </div>
                             </div>
                     </div>
-                </div></div>
+                </div>
+                </div>
                 @endif
+
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+
+                        <div class="ibox-title">
+                            <h5>Discussions</h5>
+                        </div>
+
+                        <div>
+                            <div class="ibox-content no-padding border-left-right">
+                                <img alt="image" class="img-responsive" src="img/discussion.jpg">
+
+                            </div>
+                            <div class="ibox-content profile-content">
+                                <div class="text-center">
+                                <b><span>{{$disc_count}} Discussion Threads</span> </b>
+                                </div>
+                                <div class="user-button">
+                                    <div class="row">
+                                        <div class="text-center">
+                                            <a href="/forums"><button type="button" class="btn btn-primary btn">View All Discussions </button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                </div>                
                 
-                <div class="col-lg-4">
-                    <div class="widget-head-color-box navy-bg p-lg text-center">
-                            <div class="m-b-md">
-                            <h2 class="font-bold no-margins">
-                                
-                            </h2>
-                                <small></small>
-                            </div>
-                            <i class="fa fa-comments fa-5x"></i>
-                            <div>
-                                <span>{{$disc_count}} Discussions</span>
-                            </div>
+                <div class="col-md-4">
+                    <div class="ibox float-e-margins">
+
+                        <div class="ibox-title">
+                            <h5>Incidents</h5>
                         </div>
-                        <div class="widget-text-box">
-                            <h4 class="media-heading"></h4>
-                            <p class="text-center">Discussions content</p>
-                            <div class="text-center">
-                                <a href="/forums"><button type="button" class="btn btn-primary btn">View All Discussions </button></a>
+
+                        <div>
+                            <div class="ibox-content no-padding border-left-right">
+                                <img alt="image" class="img-responsive" src="img/discussion.jpg">
+
                             </div>
-                        </div>
+                            <div class="ibox-content profile-content">
+                                <div class="text-center">
+                                <b><span>{{$incident_count}} Incidents</span> </b>
+                                </div>
+                                <div class="user-button">
+                                    <div class="row">
+                                        <div class="text-center">
+                                            <a href="/forums"><button type="button" class="btn btn-primary btn">View All Incidents </button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="widget-head-color-box navy-bg p-lg text-center">
-                            <div class="m-b-md">
-                            <h2 class="font-bold no-margins">
-                                
-                            </h2>
-                                <small></small>
-                            </div>
-                            <i class="fa fa-stack-exchange fa-5x"></i>
-                            <div>
-                                <span>{{$incident_count}} Incidents</span>
-                            </div>
-                        </div>
-                        <div class="widget-text-box">
-                            <h4 class="media-heading"></h4>
-                            <p class="text-center">Incidents content</p>
-                            <div class="text-center">
-                                <a href="/incidents"><button type="button" class="btn btn-primary btn">View All Incidents </button></a>
-                            </div>
-                        </div>
-                </div>
+                </div>  
                 
             </div>
         </div>
