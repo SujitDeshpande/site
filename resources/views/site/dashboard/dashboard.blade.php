@@ -24,15 +24,21 @@
          <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 @if($group_id == 1)
-<div class="col-md-4">
+                <div class="col-md-4">
                     <div class="ibox float-e-margins">
+                    <i class="fa fa-users fa-5x"></i>
+                        <div class="ibox-title">
+                            <h5>Users</h5>
+                        </div>
 
                         <div>
                             <div class="ibox-content no-padding border-left-right">
                                 <img alt="image" class="img-responsive" src="img/profile_big.jpg">
                             </div>
                             <div class="ibox-content profile-content">
-                                <h4><strong>Monica Smith</strong></h4>
+                                <div>
+                                <span>{{$user_count}} Users</span> 
+                                </div>
                                 <div class="user-button">
                                     <div class="row">
                                         <div class="text-center">
@@ -42,7 +48,7 @@
                                 </div>
                             </div>
                     </div>
-</div></div>
+                </div></div>
 
                 <div class="col-lg-4">
                     <div class="ibox-content text-center">
