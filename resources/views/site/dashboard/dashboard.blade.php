@@ -24,6 +24,24 @@
          <div class="wrapper wrapper-content animated fadeInRight">
             <div class="row">
                 @if($group_id == 1)
+
+                        <div>
+                            <div class="ibox-content no-padding border-left-right">
+                                <img alt="image" class="img-responsive" src="img/profile_big.jpg">
+                            </div>
+                            <div class="ibox-content profile-content">
+                                <h4><strong>Monica Smith</strong></h4>
+                                <div class="user-button">
+                                    <div class="row">
+                                        <div class="text-center">
+                                            <a href="/user"><button type="button" class="btn btn-primary btn">View All Users </button></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+
+
                 <div class="col-lg-4">
                     <div class="ibox-content text-center">
 
