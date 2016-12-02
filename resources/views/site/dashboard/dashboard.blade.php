@@ -34,11 +34,11 @@
                         <div>
                             <div class="ibox-content no-padding border-left-right">
                                 <img alt="image" class="img-responsive" src="img/profile_big.jpg">
-                                <i class="fa fa-users fa-5x"></i>
+
                             </div>
                             <div class="ibox-content profile-content">
-                                <div>
-                                <span>{{$user_count}} Users</span> 
+                                <div class="text-center">
+                                <b><span>{{$user_count}} Users</span> </b>
                                 </div>
                                 <div class="user-button">
                                     <div class="row">
