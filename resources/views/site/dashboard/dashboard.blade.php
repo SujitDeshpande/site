@@ -90,7 +90,7 @@
 
                         <div>
                             <div class="ibox-content no-padding border-left-right">
-                                <img alt="image" class="img-responsive" src="img/discussion.jpg">
+                                <img alt="image" class="img-responsive" src="img/incidents.jpg">
 
                             </div>
                             <div class="ibox-content profile-content">
