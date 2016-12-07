@@ -100,7 +100,7 @@
                                 <div class="user-button">
                                     <div class="row">
                                         <div class="text-center">
-                                            <a href="/forums"><button type="button" class="btn btn-primary btn">View All Incidents </button></a>
+                                            <a href="/incidents"><button type="button" class="btn btn-primary btn">View All Incidents </button></a>
                                         </div>
                                     </div>
                                 </div>
