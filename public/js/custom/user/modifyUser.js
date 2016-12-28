@@ -12,8 +12,6 @@ $(document).ready(function(){
 		var status = $('#status-group option:selected').val();
 		var statusname = $('#status-group option:selected').text();
 
-
-
 		var hasError = false;
 		if(name == '') {
 			swal("Error", "Please Enter a Valid Name!", "error"); 
@@ -58,7 +56,8 @@ $(document).ready(function(){
 		            email: $('input[name="memail"]').val(),
 		            group: $('#select-group option:selected').val(),
 		            status: $('#status-group option:selected').val(),
-		            password: $('input[name="mpassword"]').val()
+		            password: $('input[name="mpassword"]').val(),
+					shift_user:$('input[name=optradio]:checked').val()
 		        }),
 			    success: function(result) {
 			        

@@ -52,13 +52,17 @@
                 @endif
                     <a href="/home"><i class="fa fa-home"></i> <span class="nav-label">Home</span></a>
                 </li>
-                @if ( Request::is('calendar'))
+                @if ( Request::is('usershifts'))
                 <li class="active">
                 @else
                 <li>
                 @endif
-                    <a href="/calendar"><i class="fa fa-calendar"></i> <span class="nav-label">Calendar</span> </a>
-                </li>
+                    <?php 
+                    $month = date('m');
+                    $year = date('Y');
+                    ?>
+                    <a href="/usershifts/{{$year}}/{{$month}}"><i class="fa fa-stack-exchange"></i> <span class="nav-label">Shift Calendar</span> </a>
+                </li>                
                 @if ( Request::is('incidents'))
                 <li class="active">
                 @else

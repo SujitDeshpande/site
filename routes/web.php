@@ -31,6 +31,11 @@ Route::post('/incidents', 'IncidentsController@store');
 Route::post('/incidents/{id}', 'IncidentsController@update');
 Route::delete('/incidents/{id}', 'IncidentsController@destroy');
 
+//Shift Calendar Routing
+Route::get('/usershifts/{year}/{month}', 'UserShiftsController@index');
+Route::post('/usershifts', 'UserShiftsController@store');
+Route::post('/usershifts/{user_id}', 'UserShiftsController@updateActualShift');
+
 //Admin Routes - Accessible to users with Admin Role
 Route::group(['middleware' => 'App\Http\Middleware\CheckRole'], function(){
 	Route::get('/create', 'UserAdminController@create');

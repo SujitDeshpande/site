@@ -8,8 +8,14 @@ $(document).ready(function(){
 		var confirm_password = $('input[name="confirm_password"]').val();
 		var group = $('#select-group option:selected').val();
 		var groupname = $('#select-group option:selected').text();
-
+		
+		var shift_user = 'N';
+		if($("#shift_user").prop('checked')) {
+			alert(1);
+			shift_user = 'Y';
+		}
 		var status = $('#status-group option:selected').val();
+		
 		var statusname = $('#status-group option:selected').text();
 
 		var hasError = false;
@@ -62,6 +68,7 @@ $(document).ready(function(){
 		            email: $('input[name="email"]').val(),
 		            group: $('#select-group option:selected').val(),
 		            status: $('#status-group option:selected').val(),
+					shift_user:shift_user,
 		            password: $('input[name="password"]').val()
 		        }),
 			    success: function(result) {

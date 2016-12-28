@@ -118,6 +118,16 @@
                                                                 </div>
                                                                 <p>&nbsp;</p>
                                                                 <div class="form-group">
+                                                                <label class="col-sm-2 control-label">Shift User</label>
+                                                                    <label class="radio-inline">
+                                                                      <input type="radio" id="radio_yes" value="Y" name="optradio">Yes
+                                                                    </label>
+                                                                    <label class="radio-inline">
+                                                                      <input type="radio"  id="radio_no" value="N" name="optradio">No
+                                                                    </label>                                                
+                                                                </div>
+                                                                <p>&nbsp;</p>               
+                                                                <div class="form-group">
                                                                     <label class="col-sm-2 control-label">Password</label>
                                                                     <div class="col-sm-10">
                                                                         <input type="password" placeholder="Leave this field blank to keep your password unchanged..." name="mpassword" value class="form-control">
@@ -177,9 +187,7 @@
             $(".modal-body #mname").val( arr[1] );
             $(".modal-body #memail").val( arr[2] );
             $('.modal-header #mimage').attr('src', '/uploads/avatars/'+arr[4]);
-            //$(".modal-body #mimage").val( arr[4] );
-            //$(".modal-body #select-group").val( arr[3] );
-            //alert(lines)
+            $("input[name=optradio][value=" + arr[5] + "]").attr('checked', 'checked');
         });
 
         $.ajaxSetup({

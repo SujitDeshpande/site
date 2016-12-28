@@ -78,6 +78,12 @@
                                                 {!! Form::select('status', $status , null, ['class'=>'form-control', 'id'=>'status-group']) !!}
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                        <label class="col-sm-2 control-label">Shift User</label>
+                                            <div class="checkbox">
+                                                &nbsp;&nbsp;<label><input name="shift_user" id="shift_user" type="checkbox" value="Y">Yes</label>
+                                            </div>
+                                        </div>                                        
 
                                         <div class="hr-line-dashed"></div>
                                         <div class="form-group">

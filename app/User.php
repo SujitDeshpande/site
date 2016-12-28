@@ -23,7 +23,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','group_id', 'status'
+        'name', 'email', 'password','group_id', 'status','shift_user'
     ];
 
     /**
@@ -67,6 +67,7 @@ class User extends Authenticatable
             'email'     => $request['email'],
             'group_id'  => intval($request['group']),
             'status'    => intval($request['status']),
+            'shift_user' => $request['shift_user'],
             'password'  => \Hash::make($request['password'])
         ]);
 
@@ -81,6 +82,7 @@ class User extends Authenticatable
         $user['name']       = $request['name'];
         $user['group_id']   = intval($request['group']);
         $user['status']     = intval($request['status']);
+        $user['shift_user'] = $request['shift_user'];
         $user['email']      = $request['email'];
 
         if(isset($request['password']) && $request['password'] != ''){
