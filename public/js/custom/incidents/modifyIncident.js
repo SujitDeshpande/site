@@ -2,9 +2,9 @@ $(document).ready(function(){
 	$(".incident-update").click(function(){
 		var incident_no = $("#select-incident_no").val();
 		var incident_id  = $('#incid').val();
-		var status = $('#select-status').find(":selected").text();
-		var category = $('#select-category').find(":selected").text();
-		var stream = $('#select-stream').find(":selected").text();
+		var status = $('#select-status').val();
+		var category = $('#select-category').val();
+		var stream = $('#select-stream').val();
 		var comments = $('#select-comments').val();
 		var hasError = false;
 		if(incident_no.trim() == '') {
